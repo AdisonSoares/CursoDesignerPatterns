@@ -1,4 +1,5 @@
 package aula01.parte01_DBImplementacao;
+//Pattern atual Singleton.
 
 /**
  * @PrincípioDeFavorecimentoDaComposiçãoSobreHerança
