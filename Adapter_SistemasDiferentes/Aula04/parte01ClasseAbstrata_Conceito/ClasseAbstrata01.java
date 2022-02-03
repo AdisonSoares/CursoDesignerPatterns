@@ -1,4 +1,5 @@
 package Aula04.parte01ClasseAbstrata_Conceito;
+//Pattern atual Singleton.
 
 /**
  * @ClasseAbstrata em java pode ter qualquer variável e qualquer modificador de acesso

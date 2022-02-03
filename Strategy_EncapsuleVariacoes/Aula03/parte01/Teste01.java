@@ -1,5 +1,7 @@
 package Aula03.parte01;
 
+
+
 public class Teste01 {
 	public static void main(String[] args) {
 		//Instanciando o objeto

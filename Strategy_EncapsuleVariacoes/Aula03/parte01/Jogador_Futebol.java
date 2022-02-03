@@ -1,4 +1,5 @@
 package Aula03.parte01;
+//Pattern atual Singleton.
 
 /**
  * @RegraDeNegocio
