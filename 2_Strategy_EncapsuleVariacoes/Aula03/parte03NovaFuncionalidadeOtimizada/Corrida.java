@@ -4,6 +4,12 @@ package Aula03.parte03NovaFuncionalidadeOtimizada;
  * @Interface criada para implementar nas classes filhas o método
  * Corrida, de acordo com cada tipo de comportamento.
  * 
+ * @Quando_programar_para_Interface
+ * O ideal é programar para interface quando for necessário,
+ * normalmente vem da necessidade de se atender ao principio
+ * de variações protegidas, ou seja, permitir que implementações
+ * mudem sem afetar o codigo cliente.
+ * 
  * @Iteração da interface Corrida para encapsular o comportamento correr.
  * 
  * @Problemática

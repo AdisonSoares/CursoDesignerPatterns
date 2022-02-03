@@ -20,10 +20,11 @@ import javax.swing.JFrame;
 * 
 * @InerClass é uma classe dentro de outra classe, no exemplo de MouseListener.
 *
-* @Na_implementação não é necessário o uso de todos os métodos apenas entrada e
-* saida do mouse, como é obrigatorio implementar todos o métodos da interface é 
-* necessário deixar os outros métodos obsoleto.
- */
+* @Na_implementação não é necessário o uso de todos os métodos 
+* apenas entrada e saida do mouse, como é obrigatorio implementar
+* todos o métodos da interface é necessário deixar os outros 
+* métodos obsoleto.
+*/
 public class GUIMouseTeste {
 	@SuppressWarnings("unused")
 	private JFrame jFrame;

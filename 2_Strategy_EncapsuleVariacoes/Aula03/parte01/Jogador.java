@@ -6,6 +6,12 @@ package Aula03.parte01;
  * 
  * @Interface que vai encapsular as caracteristicas gerais
  * dos jogadores.
+ * 
+ * @Quando_programar_para_Interface
+ * O ideal é programar para interface quando for necessário,
+ * normalmente vem da necessidade de se atender ao principio
+ * de variações protegidas, ou seja, permitir que implementações
+ * mudem sem afetar o codigo cliente.
  */
 public abstract class Jogador {
 	//Regra de negócio - Nome do jogador

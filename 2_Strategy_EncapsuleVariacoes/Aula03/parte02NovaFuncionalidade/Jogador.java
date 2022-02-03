@@ -8,6 +8,12 @@ package Aula03.parte02NovaFuncionalidade;
  * @Interface que encapsula as caracteristicas gerais
  * dos jogadores.
  * 
+ * @Quando_programar_para_Interface
+ * O ideal é programar para interface quando for necessário,
+ * normalmente vem da necessidade de se atender ao principio
+ * de variações protegidas, ou seja, permitir que implementações
+ * mudem sem afetar o codigo cliente.
+ * 
  * @Iteração de um novo tipo de jogador.
  * 
  * @Problemática

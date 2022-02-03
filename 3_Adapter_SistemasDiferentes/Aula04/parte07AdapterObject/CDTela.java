@@ -8,13 +8,15 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 
 /**
- * @ObjectAdapter possui a mesma estrutura de um class adapter, tendo como diferencial
- * o target(alvo), que não é uma interface é uma classe, já que em java não permite
- * herança multipla, precisa fazer com que o adapter herde de target, em vez
- * de implementar o target, fazendo com que o adapter não herde do adaptee.
+ * @ObjectAdapter possui a mesma estrutura de um class adapter,
+ * tendo como diferencial o target(alvo), que não é uma interface
+ * é uma classe, já que em java não permite herança multipla, 
+ * precisa fazer com que o adapter herde de target, em vez
+ * de implementar o target, fazendo com que o adapter não 
+ * herde do adaptee.
  * 
- * @Atraves_de_composição o adapter consegue adaptar a interface esperada pelo cliente
- * e a interface do presente no adaptee.
+ * @Atraves_de_composição o adapter consegue adaptar a interface
+ * esperada pelo cliente e a interface do presente no adaptee.
  *
  */
 public class CDTela {

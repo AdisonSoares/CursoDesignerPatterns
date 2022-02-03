@@ -2,15 +2,17 @@ package Aula04.parte03Interface_Marcadora;
 
 /**
  * @Regras_adicionais_interface_marcadora
- * Nem toda interface precisa de métodos pois podem ser marcadoras, pode-se criar
- * interfaces marcadoras em que suas subclasses escolham se vão ou não participar 
- * dos comportamentos previstos por ela.
+ * Nem toda interface precisa de métodos pois podem ser marcadoras,
+ * pode-se criar interfaces marcadoras em que suas subclasses escolham
+ * se vão ou não participar dos comportamentos previstos por ela.
  * 
- * @.clone faz parte da classe Object que toda a classe herda de forma padrão que retorna
- * um object, caso não queira esse retorna precisa fazer um cast.
+ * @.clone faz parte da classe Object que toda a classe herda de forma
+ * padrão que retorna um object, caso não queira esse retorna precisa
+ * fazer um cast.
  * 
- * @InterfaceCloneable não possui assinaturas de métodos, pois é uma interface marcadora
- * servindo apenas para notificar outra classe que determinado evento acontece.
+ * @InterfaceCloneable não possui assinaturas de métodos, pois é uma 
+ * interface marcadora servindo apenas para notificar outra classe 
+ * que determinado evento acontece.
  * 
  * @Problemática
  * Ao clonar um objeto é gerada uma exceção não finalizando a clonagem.
