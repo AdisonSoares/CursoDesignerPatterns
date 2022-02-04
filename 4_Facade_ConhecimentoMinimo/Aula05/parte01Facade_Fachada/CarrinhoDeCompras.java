@@ -1,7 +1,7 @@
 package Aula05.parte01Facade_Fachada;
 import java.util.ArrayList;
 import java.util.List;
-//Pattern atual Singleton.
+//Pattern atual Fábrica Concreta.
 
 public class CarrinhoDeCompras {
 	//Tipo interface - List

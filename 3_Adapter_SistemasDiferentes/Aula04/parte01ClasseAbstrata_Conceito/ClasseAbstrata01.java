@@ -1,5 +1,5 @@
 package Aula04.parte01ClasseAbstrata_Conceito;
-//Pattern atual Singleton.
+//Pattern atual Fábrica Concreta.
 
 /**
  * @ClasseAbstrata em java pode ter qualquer variável e qualquer

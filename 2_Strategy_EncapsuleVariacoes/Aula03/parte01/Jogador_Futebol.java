@@ -1,5 +1,5 @@
 package Aula03.parte01;
-//Pattern atual Singleton.
+//Pattern atual Fábrica Concreta.
 
 /**
  * @RegraDeNegocio
