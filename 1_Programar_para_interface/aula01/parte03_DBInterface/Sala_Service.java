@@ -16,9 +16,9 @@ package aula01.parte03_DBInterface;
  * do designer em específico, nesse exemplo se programa para INTERFACE.
  */
 public class Sala_Service {
-	private Connection connection;
+	private Connection_ connection;
 	
-	public Sala_Service(Connection connection) {
+	public Sala_Service(Connection_ connection) {
 		this.connection = connection;
 	}
 	

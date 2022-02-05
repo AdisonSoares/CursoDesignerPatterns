@@ -13,10 +13,10 @@ package aula01.parte02_DBImplementacao;
  * do designer em específico, nesse exemplo se programa para IMPLEMENTAÇÃO.
  */
 public class Relatorio_Reserva {
-	private OracleConnection connection;
+	private Oracle_Connection connection;
 	
 	public Relatorio_Reserva() {
-		connection = new OracleConnection();
+		connection = new Oracle_Connection();
 	}
 	
 	public void GeracaoDeRelatorio() {

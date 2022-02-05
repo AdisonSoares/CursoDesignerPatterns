@@ -14,16 +14,16 @@ package aula01.parte03_DBInterface;
 public class Teste_Conexao03 {
 	public static void main(String[] args) {
 		
-		SalaService sala = new SalaService(new OracleConnection());
+		Sala_Service sala = new Sala_Service(new Oracle_Connection());
 		sala.SalaVerification();
 		System.out.println();
 		
 		
-		RelatorioReserva relatorio = new RelatorioReserva(new MySqlConnection());
+		Relatorio_Reserva relatorio = new Relatorio_Reserva(new MySql_Connection());
 		relatorio.GeracaoDeRelatorio();
 		System.out.println();
 		 
-		ServicoDeReserva reserva = new ServicoDeReserva(new SqlServerConnection());
+		Servico_De_Reserva reserva = new Servico_De_Reserva(new SqlServer_Connection());
 		reserva.CriarReserva();
 		System.out.println();
 	}

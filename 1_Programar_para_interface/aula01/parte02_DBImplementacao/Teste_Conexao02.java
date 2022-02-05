@@ -12,16 +12,16 @@ package aula01.parte02_DBImplementacao;
 public class Teste_Conexao02 {
 	public static void main(String[] args) {
 		
-		SalaService sala = new SalaService();
+		Sala_Service sala = new Sala_Service();
 		sala.SalaVerification();
 		System.out.println();
 		
 		
-		RelatorioReserva relatorio = new RelatorioReserva();
+		Relatorio_Reserva relatorio = new Relatorio_Reserva();
 		relatorio.GeracaoDeRelatorio();
 		System.out.println();
 		 
-		ServicoDeReserva reserva = new ServicoDeReserva();
+		Servico_De_Reserva reserva = new Servico_De_Reserva();
 		reserva.CriarReserva();
 		System.out.println();
 	}

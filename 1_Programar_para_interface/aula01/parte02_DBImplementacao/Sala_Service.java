@@ -14,10 +14,10 @@ package aula01.parte02_DBImplementacao;
  * do designer em específico, nesse exemplo se programa para IMPLEMENTAÇÃO.
  */
 public class Sala_Service {
-	private OracleConnection connection;
+	private Oracle_Connection connection;
 	
 	public Sala_Service() {
-		connection = new OracleConnection();
+		connection = new Oracle_Connection();
 	}
 	
 	public void SalaVerification() {

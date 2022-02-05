@@ -14,9 +14,9 @@ package aula01.parte03_DBInterface;
  * do designer em específico, nesse exemplo se programa para INTERFACE.
  */
 public class Relatorio_Reserva {
-	private Connection connection;
+	private Connection_ connection;
 	
-	public Relatorio_Reserva(Connection connection) {
+	public Relatorio_Reserva(Connection_ connection) {
 		this.connection = connection;
 	}
 	

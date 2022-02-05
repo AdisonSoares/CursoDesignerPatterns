@@ -15,7 +15,7 @@ package aula01.parte03_DBInterface;
  * se baseiam nela para confecção do arranjo entre as classes envolvidas
  * do designer em específico, nesse exemplo se programa para INTERFACE.
  */
-public class Oracle_Connection implements Connection {
+public class Oracle_Connection implements Connection_ {
 	@Override
 	public void connect() {
 		System.out.println("Conectando ao Oracle");
