@@ -5,6 +5,7 @@ package aula02.parte01_FlowContainer;
  * a classificação de um elemento
  * que pode ser armazenado.
  * 
+ * 
  * @PrincípioDeFavorecimentoDaComposiçãoSobreHerança
  * Principio de designer simples, outros tipos de designes
  * se baseiam nela para confecção do arranjo entre as classes envolvidas
