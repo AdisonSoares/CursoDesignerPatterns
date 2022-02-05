@@ -6,6 +6,7 @@ package aula01.parte01_DBImplementacao;
  * utilizado por outros elementos da aplicação.
  * Apresenta apenas uma mensagem.
  * 
+ * 
  * @PrincípioDeFavorecimentoDaComposiçãoSobreHerança
  * Principio de designer simples, outros tipos de designes
  * se baseiam nela para confecção do arranjo entre as classes envolvidas
