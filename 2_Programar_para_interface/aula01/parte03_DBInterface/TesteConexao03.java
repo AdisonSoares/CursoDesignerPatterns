@@ -11,7 +11,7 @@ package aula01.parte03_DBInterface;
  * se baseiam nela para confecção do arranjo entre as classes envolvidas
  * do designer em específico, nesse exemplo se programa para INTERFACE.
  */
-public class TesteConexao {
+public class TesteConexao03 {
 	public static void main(String[] args) {
 		
 		SalaService sala = new SalaService(new OracleConnection());
