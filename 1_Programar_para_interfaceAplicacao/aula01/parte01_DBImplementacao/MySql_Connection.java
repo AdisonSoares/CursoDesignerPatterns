@@ -1,5 +1,4 @@
 package aula01.parte01_DBImplementacao;
-//Pattern atual Fábrica Concreta.
 
 /**
  * @Classe que simula a conexão
