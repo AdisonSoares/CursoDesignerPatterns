@@ -1,8 +1,8 @@
-package aula01.parte03_DBInterface;
+package aula01.parte03_DBInterface_;
 
 /**
- * @CamadaDeNegócio da aplicação relacionada a criação de
- * uma reserva na pousada, depende de um banco de dados.
+ * @CamadaDeNegócio do relatorio
+ * de reservas fechadas ou abertas, que depende de um banco de dados.
  * 
  * @InstanciandoInterfaceConnection não é preciso instanciar um banco de dados, 
  * pode-se escolher seus objetos que são as classes 
@@ -13,15 +13,15 @@ package aula01.parte03_DBInterface;
  * se baseiam nela para confecção do arranjo entre as classes envolvidas
  * do designer em específico, nesse exemplo se programa para INTERFACE.
  */
-public class Servico_De_Reserva {
+public class Relatorio_Reserva {
 	private Connection_ connection;
 	
-	public Servico_De_Reserva(Connection_ connection) {
+	public Relatorio_Reserva(Connection_ connection) {
 		this.connection = connection;
 	}
 	
-	public void CriarReserva() {
+	public void GeracaoDeRelatorio() {
 		connection.connect();
-		System.out.println("Lógica de negócios - Criação de reserva");
+		System.out.println("Lógica de negócios - Geração de relatório");
 	}
 }
