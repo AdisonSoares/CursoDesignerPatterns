@@ -1,4 +1,4 @@
-package aula01.parte01_DBImplementacao;
+package aula01.parte01_DBImplementacao_;
 
 /**
  * @CamadaDeNegócio do relatorio
@@ -9,11 +9,11 @@ package aula01.parte01_DBImplementacao;
  * se baseiam nela para confecção do arranjo entre as classes envolvidas
  * do designer em específico, nesse exemplo se programa para IMPLEMENTAÇÃO.
  */
-public class Relatorio_Reserva {
-	private MySql_Connection connection;
+public class Relatorio_Reserva_ {
+	private MySql_Connection_ connection;
 	
-	public Relatorio_Reserva() {
-		connection = new MySql_Connection();
+	public Relatorio_Reserva_() {
+		connection = new MySql_Connection_();
 	}
 	
 	public void GeracaoDeRelatorio() {

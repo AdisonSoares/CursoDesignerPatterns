@@ -1,4 +1,4 @@
-package aula01.parte01_DBImplementacao;
+package aula01.parte01_DBImplementacao_;
 
 /**
  * @CamadaDeNegócio da aplicação relacionada a criação de
@@ -9,11 +9,11 @@ package aula01.parte01_DBImplementacao;
  * se baseiam nela para confecção do arranjo entre as classes envolvidas
  * do designer em específico, nesse exemplo se programa para IMPLEMENTAÇÃO.
  */
-public class Servico_De_Reserva {
-	private MySql_Connection connection;
+public class Servico_De_Reserva_ {
+	private MySql_Connection_ connection;
 	
-	public Servico_De_Reserva() {
-		connection = new MySql_Connection();
+	public Servico_De_Reserva_() {
+		connection = new MySql_Connection_();
 	}
 	
 	public void CriarReserva() {
