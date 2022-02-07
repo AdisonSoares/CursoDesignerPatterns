@@ -1,23 +1,22 @@
-package aula01.parte03_DBInterface;
+package aula01.parte02_DBImplementacao_;
 
 /**
  * @CamadaDeNegócio do relatorio
  * de reservas fechadas ou abertas, que depende de um banco de dados.
  * 
- * @InstanciandoInterfaceConnection não é preciso instanciar um banco de dados, 
- * pode-se escolher seus objetos que são as classes 
- * MySqlConnection, OracleConnection e SqlServer.
+ * @Inclusão de um novo banco de dados, substituir o Mysql
+ * pelo Oracle
  * 
  * @PrincípioDeFavorecimentoDaComposiçãoSobreHerança
  * Principio de designer simples, outros tipos de designes
  * se baseiam nela para confecção do arranjo entre as classes envolvidas
- * do designer em específico, nesse exemplo se programa para INTERFACE.
+ * do designer em específico, nesse exemplo se programa para IMPLEMENTAÇÃO.
  */
-public class Relatorio_Reserva {
-	private IConnection_ connection;
+public class Relatorio_Reserva_ {
+	private Oracle_Connection_ connection;
 	
-	public Relatorio_Reserva(IConnection_ connection) {
-		this.connection = connection;
+	public Relatorio_Reserva_() {
+		connection = new Oracle_Connection_();
 	}
 	
 	public void GeracaoDeRelatorio() {
