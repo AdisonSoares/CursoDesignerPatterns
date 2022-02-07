@@ -1,4 +1,4 @@
-package aula01.parte02_DBImplementacao_;
+package aula01.parte02_DBImplementacao;
 
 /**
  * @CamadaDeNegócio da aplicação relacionada a criação de
