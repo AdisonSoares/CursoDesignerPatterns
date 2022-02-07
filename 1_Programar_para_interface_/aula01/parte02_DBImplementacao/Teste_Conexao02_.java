@@ -1,4 +1,4 @@
-package aula01.parte02_DBImplementacao_;
+package aula01.parte02_DBImplementacao;
 
 /**
  * @Inclusão de um novo banco de dados, substituir o Mysql
