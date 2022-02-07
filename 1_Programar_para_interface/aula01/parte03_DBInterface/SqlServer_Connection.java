@@ -1,4 +1,4 @@
-package aula01.parte03_DBInterface_;
+package aula01.parte03_DBInterface;
 
 /**
  * @Classe que simula a conexão
