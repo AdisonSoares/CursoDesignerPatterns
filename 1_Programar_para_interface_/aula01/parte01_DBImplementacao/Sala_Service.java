@@ -1,4 +1,4 @@
-package aula01.parte01_DBImplementacao_;
+package aula01.parte01_DBImplementacao;
 
 /**
  * @CamadaDeNegócio que representa um quarto,
