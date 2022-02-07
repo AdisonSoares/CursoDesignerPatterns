@@ -15,7 +15,7 @@ package aula01.parte03_DBInterface_;
  * se baseiam nela para confecção do arranjo entre as classes envolvidas
  * do designer em específico, nesse exemplo se programa para INTERFACE.
  */
-public class SqlServer_Connection implements Connection_{
+public class SqlServer_Connection implements IConnection_{
 
 	@Override
 	public void connect() {

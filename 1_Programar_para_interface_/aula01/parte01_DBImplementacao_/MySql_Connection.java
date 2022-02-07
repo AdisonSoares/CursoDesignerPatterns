@@ -12,7 +12,7 @@ package aula01.parte01_DBImplementacao_;
  * se baseiam nela para confecção do arranjo entre as classes envolvidas
  * do designer em específico, nesse exemplo se programa para IMPLEMENTAÇÃO.
  */
-public class MySql_Connection_{
+public class MySql_Connection{
 	public void connect(){
 		System.out.println("Conectando ao MySql");
 	}

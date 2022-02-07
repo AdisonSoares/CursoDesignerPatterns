@@ -10,11 +10,11 @@ package aula01.parte01_DBImplementacao_;
  * se baseiam nela para confecção do arranjo entre as classes envolvidas
  * do designer em específico, nesse exemplo se programa para IMPLEMENTAÇÃO.
  */
-public class Sala_Service_ {
-	private MySql_Connection_ connection;
+public class Sala_Service {
+	private MySql_Connection connection;
 	
-	public Sala_Service_() {
-		connection = new MySql_Connection_();
+	public Sala_Service() {
+		connection = new MySql_Connection();
 	}
 	
 	public void SalaVerification() {

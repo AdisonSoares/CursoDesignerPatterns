@@ -9,11 +9,11 @@ package aula01.parte01_DBImplementacao_;
  * se baseiam nela para confecção do arranjo entre as classes envolvidas
  * do designer em específico, nesse exemplo se programa para IMPLEMENTAÇÃO.
  */
-public class Relatorio_Reserva_ {
-	private MySql_Connection_ connection;
+public class Relatorio_Reserva {
+	private MySql_Connection connection;
 	
-	public Relatorio_Reserva_() {
-		connection = new MySql_Connection_();
+	public Relatorio_Reserva() {
+		connection = new MySql_Connection();
 	}
 	
 	public void GeracaoDeRelatorio() {

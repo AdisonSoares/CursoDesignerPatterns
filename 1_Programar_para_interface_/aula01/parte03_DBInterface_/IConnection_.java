@@ -17,6 +17,6 @@ package aula01.parte03_DBInterface_;
  * se baseiam nela para confecção do arranjo entre as classes envolvidas
  * do designer em específico, nesse exemplo se programa para INTERFACE.
  */
-public interface Connection_ {
+public interface IConnection_ {
 	public void connect();
 }
