@@ -1,4 +1,4 @@
-package aula02.parte05_FlowGridContainerNovaFuncionalidadeOtimizadaHeranca_;
+package aula02.parte05_FlowGridContainerNovaFuncionalidadeOtimizadaHeranca;
 import java.util.Arrays;
 
 /**
@@ -10,7 +10,7 @@ import java.util.Arrays;
  * @Implementação da classe 
  * Container para adicionar, remover e exibir a lista.
  * 
- * @Iteração de um novo requisito/funcionalidade borda pontilhada ao redor.
+ * @Iteração de um novo requisito/funcionalidade borda solida ao redor.
  * 
  * @Otimização por meio de HERANÇA para reaproveitar códigos, os outros métodos
  * serão herdados de RedeContainer.
@@ -20,9 +20,9 @@ import java.util.Arrays;
  * se baseiam nela para confecção do arranjo entre as classes envolvidas
  * do designer em específico, nesse exemplo se programa para INTERFACE.
  */
-public class RedeContainerBordaPontilhada extends RedeContainer{
+public class RedeContainerBordaSolida extends RedeContainer{
 	
-	public RedeContainerBordaPontilhada(int largura, int altura) {
+	public RedeContainerBordaSolida(int largura, int altura) {
 		super(largura, altura);
 		elementosArray = new Component[largura][altura]; 
 	}
@@ -30,11 +30,12 @@ public class RedeContainerBordaPontilhada extends RedeContainer{
 	@Override
 	public void exibir() {
 		System.out.println("Container utilizado - Rede Container");
-		System.out.println("Contem uma borda pontilhada ao redor");
+		System.out.println("Contem uma borda solida ao redor");
 		System.out.println("Elementos presentes nesse container:");
 		System.out.println(Arrays.deepToString(elementosArray));
 		System.out.println("Usando herança para fechar o container");
 		this.dispor();
 		System.out.println();
 	}
+	
 }

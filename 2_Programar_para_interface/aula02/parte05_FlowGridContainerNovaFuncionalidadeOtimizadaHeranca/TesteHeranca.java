@@ -1,4 +1,4 @@
-package aula02.parte05_FlowGridContainerNovaFuncionalidadeOtimizadaHeranca_;
+package aula02.parte05_FlowGridContainerNovaFuncionalidadeOtimizadaHeranca;
 
 /**
  * @Classe main para teste
