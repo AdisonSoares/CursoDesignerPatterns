@@ -1,4 +1,4 @@
-package aula03.parte04NovaFuncionalidadeOtimizadaEncapsularVariacoes_;
+package aula03.parte04NovaFuncionalidadeOtimizadaEncapsularVariacoes;
 
 /**
  * @RegraDeNegocio
@@ -47,18 +47,18 @@ package aula03.parte04NovaFuncionalidadeOtimizadaEncapsularVariacoes_;
  * @Resolvendo o problema da pouca otimização no aproveitamento de código e deixando mais
  * fácil e atrativa a iteração do programa.
  */
-public class Jogador_Poker extends Jogador_ClienteStrategy{
-
+public class Jogador_Futebol extends Jogador_ClienteStrategy {
+	
 	//Método construtor
-	public Jogador_Poker() {
+	public Jogador_Futebol() {
 	}
-	public Jogador_Poker(String nome, IComportamentoCorrida_StrategyBase comportamentoCorrida) {
+	public Jogador_Futebol(String nome, IComportamentoCorrida_StrategyBase comportamentoCorrida) {
 		super(nome,comportamentoCorrida);
 	}
-
+	
 	@Override
 	public void estrategia() {
-		System.out.println("O jogador de poker "+getNome()+" não expressa emoçoes durante as jogadas");
+		System.out.println("O Jogador de futebol "+getNome()+" prioriza o drible e avanço");
 	}
-
+	
 }

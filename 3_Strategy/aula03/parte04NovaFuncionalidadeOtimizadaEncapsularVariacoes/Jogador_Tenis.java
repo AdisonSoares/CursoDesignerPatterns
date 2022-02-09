@@ -1,4 +1,4 @@
-package aula03.parte04NovaFuncionalidadeOtimizadaEncapsularVariacoes_;
+package aula03.parte04NovaFuncionalidadeOtimizadaEncapsularVariacoes;
 
 /**
  * @RegraDeNegocio
@@ -47,18 +47,17 @@ package aula03.parte04NovaFuncionalidadeOtimizadaEncapsularVariacoes_;
  * @Resolvendo o problema da pouca otimização no aproveitamento de código e deixando mais
  * fácil e atrativa a iteração do programa.
  */
-public class Jogador_Xadrez extends Jogador_ClienteStrategy{
+public class Jogador_Tenis extends Jogador_ClienteStrategy {
 
 	//Método construtor
-	public Jogador_Xadrez() {
+	public Jogador_Tenis() {
 	}
-	public Jogador_Xadrez(String nome, IComportamentoCorrida_StrategyBase comportamentoCorrida) {
+	public Jogador_Tenis(String nome, IComportamentoCorrida_StrategyBase comportamentoCorrida) {
 		super(nome,comportamentoCorrida);
 	}
 	
 	@Override
 	public void estrategia() {
-		System.out.println("O jogador de xadrez "+getNome()+" começa com estrategias padronizadas e depois se adapta");
+		System.out.println("O jogador de tênis "+getNome()+" força mais o saque");
 	}
-	
 }

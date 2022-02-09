@@ -1,4 +1,4 @@
-package aula03.parte04NovaFuncionalidadeOtimizadaEncapsularVariacoes_;
+package aula03.parte04NovaFuncionalidadeOtimizadaEncapsularVariacoes;
 
 /**
  * @RegraDeNegocio
@@ -45,20 +45,22 @@ package aula03.parte04NovaFuncionalidadeOtimizadaEncapsularVariacoes_;
  * sem que haja alguma alteração nas funcionalidades que não variam.
  * 
  * @Resolvendo o problema da pouca otimização no aproveitamento de código e deixando mais
- * fácil e atrativa a iteração do programa.
+ * fácil e atrativa a iteração do programa, pois não precisa alterar todos os códigos 
+ * envolvidos, apenas acrescentar a iteração necessária.
  */
-public class Jogador_Futebol extends Jogador_ClienteStrategy {
-	
+public class Jogador_Golfe extends Jogador_ClienteStrategy{
+
 	//Método construtor
-	public Jogador_Futebol() {
+	public Jogador_Golfe() {
+		
 	}
-	public Jogador_Futebol(String nome, IComportamentoCorrida_StrategyBase comportamentoCorrida) {
+	public Jogador_Golfe(String nome, IComportamentoCorrida_StrategyBase comportamentoCorrida) {
 		super(nome,comportamentoCorrida);
 	}
 	
 	@Override
 	public void estrategia() {
-		System.out.println("O Jogador de futebol "+getNome()+" prioriza o drible e avanço");
+		System.out.println("O jogador de golfe "+getNome()+" não ultrapassa os limites de tacadas para cada distancia");
+		
 	}
-	
 }

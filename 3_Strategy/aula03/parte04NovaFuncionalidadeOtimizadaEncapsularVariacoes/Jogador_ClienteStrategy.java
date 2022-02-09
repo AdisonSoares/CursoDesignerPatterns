@@ -1,4 +1,4 @@
-package aula03.parte04NovaFuncionalidadeOtimizadaEncapsularVariacoes_;
+package aula03.parte04NovaFuncionalidadeOtimizadaEncapsularVariacoes;
 
 /**
  * @RegraDeNegocio
