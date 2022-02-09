@@ -1,4 +1,4 @@
-package aula03.parte01_;
+package aula03.parte01;
 
 public class Teste01 {
 	public static void main(String[] args) {
