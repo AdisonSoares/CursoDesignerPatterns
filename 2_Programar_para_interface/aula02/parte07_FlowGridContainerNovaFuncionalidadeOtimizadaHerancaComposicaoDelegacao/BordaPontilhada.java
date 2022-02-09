@@ -1,7 +1,7 @@
-package aula02.parte07_FlowGridContainerNovaFuncionalidadeOtimizadaHerancaComposicaoDelegacao_;
+package aula02.parte07_FlowGridContainerNovaFuncionalidadeOtimizadaHerancaComposicaoDelegacao;
 
 /**
- * @Classe criada para implementar uma caracteristica solida
+ * @Classe criada para implementar uma caracteristica pontilhada
  * de Borda.
  * 
  * @PrincípioDeFavorecimentoDaComposiçãoSobreHerança
@@ -11,22 +11,21 @@ package aula02.parte07_FlowGridContainerNovaFuncionalidadeOtimizadaHerancaCompos
  * 
  * @autor Adison
  */
-public class BordaColorida extends Borda{
+public class BordaPontilhada extends Borda{
 	
-	public BordaColorida() {
+	public BordaPontilhada() {
 		
 	}
 	
-	public BordaColorida(Container container) {
+	public BordaPontilhada(Container container) {
 		super.setContainer(container);
 	}
 
 	@Override
 	public void gerarBorda() {
 		getContainer().exibir();
-		System.out.println("Contem uma borda colorida");
+		System.out.println("Contem uma borda pontilhada ao redor");
 		getContainer().fecharContainer();
-		
 	}
 
 }

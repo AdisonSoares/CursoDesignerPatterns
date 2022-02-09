@@ -1,12 +1,15 @@
-package aula02.parte07_FlowGridContainerNovaFuncionalidadeOtimizadaHerancaComposicaoDelegacao_;
+package aula02.parte07_FlowGridContainerNovaFuncionalidadeOtimizadaHerancaComposicaoDelegacao;
 
 /**
- * @Classe para estruturar o funcionamento
- * de um container.
+ * @Interface criada para centralizar a funcionalidade borda, para
+ * desassociar as bordas dos containes, gerando uma hierarquia de bordas.
+ * 
+ * @Delegação
+ * Agora a interface borda possui um container.
  * 
  * @Metodos abstratos que, obrigatoriamente, terão que
  * ser implementados por suas classes herdeiras de acordo
- * com seus diferentes comportamentos, é uma forma de
+ * com seus diferentes comportamentos, é uma forma de 
  * programar para interface.
  * 
  * @Quando_programar_para_Interface
@@ -23,16 +26,20 @@ package aula02.parte07_FlowGridContainerNovaFuncionalidadeOtimizadaHerancaCompos
  * se baseiam nela para confecção do arranjo entre as classes envolvidas
  * do designer em específico, nesse exemplo se programa para INTEFACE.
  */
-public abstract class Container {
-
-	//Método abstrato
-	public abstract void addComponent(Component component);
-	public abstract void remComponent(Component component);
-	public abstract void exibir();
+public abstract class Borda {
+	//Ligação com a classe container
+	private Container container;
 	
-	//Método concreto
-	public void fecharContainer() {
-		System.out.println("Fechando o container personalizado atraves de delegação\n");
+	//Método para ativar a funcionalidade
+	public abstract void gerarBorda();
+
+
+	public void setContainer(Container container) {
+		this.container = container;
+	}
+	
+	public Container getContainer() {
+		return container;
 	}
 	
 }
