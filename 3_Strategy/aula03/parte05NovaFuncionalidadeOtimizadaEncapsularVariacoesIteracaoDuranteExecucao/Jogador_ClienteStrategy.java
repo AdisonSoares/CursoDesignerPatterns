@@ -1,4 +1,4 @@
-package aula03.parte05NovaFuncionalidadeOtimizadaEncapsularVariacoesIteracaoDuranteExecucao_;
+package aula03.parte05NovaFuncionalidadeOtimizadaEncapsularVariacoesIteracaoDuranteExecucao;
 
 /**
  * @RegraDeNegocio

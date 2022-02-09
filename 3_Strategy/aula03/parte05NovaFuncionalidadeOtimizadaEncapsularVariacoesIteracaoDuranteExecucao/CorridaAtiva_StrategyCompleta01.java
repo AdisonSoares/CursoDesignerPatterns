@@ -1,4 +1,4 @@
-package aula03.parte05NovaFuncionalidadeOtimizadaEncapsularVariacoesIteracaoDuranteExecucao_;
+package aula03.parte05NovaFuncionalidadeOtimizadaEncapsularVariacoesIteracaoDuranteExecucao;
 
 /**
  * @Classe para implementar o comportamento correr de forma ativa da interface Comportamento Corrida.
@@ -28,10 +28,10 @@ package aula03.parte05NovaFuncionalidadeOtimizadaEncapsularVariacoesIteracaoDura
  * funçoes é preciso modificar o construtor para permitir a composiçao de um jogador com uma estrategia
  * especifica de corrida.
  */
-public class CorridaInativa_StrategyCompleta02 implements IComportamentoCorrida_StrategyBase{
+public class CorridaAtiva_StrategyCompleta01 implements IComportamentoCorrida_StrategyBase{
 
 	@Override
 	public void correr() {
-		System.out.println("Jogador não precisa correr\n");
+		System.out.println("Jogador precisa correr\n");
 	}
 }

@@ -1,4 +1,4 @@
-package aula03.parte05NovaFuncionalidadeOtimizadaEncapsularVariacoesIteracaoDuranteExecucao_;
+package aula03.parte05NovaFuncionalidadeOtimizadaEncapsularVariacoesIteracaoDuranteExecucao;
 
 public class Teste05 {
 	public static void main(String[] args) {
