@@ -1,4 +1,4 @@
-package aula02.parte06_FlowGridContainerNovaFuncionalidadeOtimizadaHerancaComposicao_;
+package aula02.parte06_FlowGridContainerNovaFuncionalidadeOtimizadaHerancaComposicao;
 import java.util.ArrayList;
 import java.util.List;
 

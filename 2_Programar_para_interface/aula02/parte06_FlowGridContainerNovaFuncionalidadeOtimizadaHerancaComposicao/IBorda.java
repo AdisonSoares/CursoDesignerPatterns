@@ -1,4 +1,4 @@
-package aula02.parte06_FlowGridContainerNovaFuncionalidadeOtimizadaHerancaComposicao_;
+package aula02.parte06_FlowGridContainerNovaFuncionalidadeOtimizadaHerancaComposicao;
 
 /**
  * @Interface criada para centralizar a funcionalidade borda, para

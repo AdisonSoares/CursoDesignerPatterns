@@ -1,4 +1,4 @@
-package aula02.parte06_FlowGridContainerNovaFuncionalidadeOtimizadaHerancaComposicao_;
+package aula02.parte06_FlowGridContainerNovaFuncionalidadeOtimizadaHerancaComposicao;
 
 /**
  * @Classe criada para implementar uma caracteristica solida
@@ -7,15 +7,15 @@ package aula02.parte06_FlowGridContainerNovaFuncionalidadeOtimizadaHerancaCompos
  * @PrincípioDeFavorecimentoDaComposiçãoSobreHerança
  * Principio de designer simples, outros tipos de designes
  * se baseiam nela para confecção do arranjo entre as classes envolvidas
- * do designer em específico, nesse exemplo se programa para INTEFACE.
+ * do designer em específico, nesse exemplo se programa para INTERFACE.
  * 
  * @autor Adison
  */
-public class BordaSolida implements IBorda{
+public class BordaColorida implements IBorda{
 
 	@Override
 	public void gerarBorda() {
-		System.out.println("Contem uma borda solida ao redor");
+		System.out.println("Contem uma borda colorida");
 		
 	}
 
