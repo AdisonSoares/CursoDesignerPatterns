@@ -1,4 +1,4 @@
-package aula03.parte03NovaFuncionalidadeOtimizada_;
+package aula03.parte03NovaFuncionalidadeOtimizada;
 
 /**
  * @RegraDeNegocio
@@ -6,7 +6,7 @@ package aula03.parte03NovaFuncionalidadeOtimizada_;
  * competição, estratégia e corrida.
  * 
  * @Classe que vai implementar as caracteristicas especificas
- * do jogador de golfe.
+ * do jogador de poker.
  * 
  * @Iteração da interface Corrida para encapsular o comportamento correr.
  * 
@@ -21,20 +21,18 @@ package aula03.parte03NovaFuncionalidadeOtimizada_;
  * constante a cada iteração, deixando o programa pouco atrativo para
  * mudanças e atualizações.
  */
-public class Jogador_Golfe extends Jogador implements ICorrida{
+public class Jogador_Poker extends Jogador implements ICorrida{
 
 	//Método construtor
-	public Jogador_Golfe() {
-		
+	public Jogador_Poker() {
 	}
-	public Jogador_Golfe(String nome) {
+	public Jogador_Poker(String nome) {
 		super.setNome(nome);
 	}
-	
+
 	@Override
 	public void estrategia() {
-		System.out.println("O jogador de golfe "+getNome()+" não ultrapassa os limites de tacadas para cada distancia");
-		
+		System.out.println("O jogador de poker "+getNome()+" não expressa emoçoes durante as jogadas");
 	}
 	
 	public void correr() {
