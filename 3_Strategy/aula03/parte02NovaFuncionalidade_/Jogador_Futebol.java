@@ -1,11 +1,11 @@
-package aula03.parte02NovaFuncionalidade;
+package aula03.parte02NovaFuncionalidade_;
 
 /**
  * @RegraDeNegocio
  * O jogador terá nome, treino, competição e estratégia própria.
  * 
  * @Classe que vai implementar as caracteristicas especificas
- * do jogador de tênis.
+ * do jogador de futebol.
  * 
  * @Iteração da caracteristica de corrida do jogador.
  * 
@@ -20,17 +20,32 @@ package aula03.parte02NovaFuncionalidade;
  * pode ser melhor otimizada para deixar menos repetitiva a sua edição
  * aos diferentes tipos de comportamentos das classes jogadores.
  */
-public class Jogador_Tenis extends Jogador {
-
+public class Jogador_Futebol extends Jogador {
+	
 	//Método construtor
-	public Jogador_Tenis() {
+	public Jogador_Futebol() {
 	}
-	public Jogador_Tenis(String nome) {
+	public Jogador_Futebol(String nome) {
 		super.setNome(nome);
 	}
 	
 	@Override
 	public void estrategia() {
-		System.out.println("O jogador de tênis "+getNome()+" força mais o saque");
+		System.out.println("o Jogador de futebol "+getNome()+" prioriza o drible e avanço");
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
