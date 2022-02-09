@@ -1,4 +1,4 @@
-package aula07.parte01_Adapter_SistemaContabil;
+package aula07.parte01_Adapter_SistemaContabil_;
 
 /**
  * @FabricaConcreta permite desacoplar a criação de seus codigos clientes,
@@ -21,7 +21,7 @@ package aula07.parte01_Adapter_SistemaContabil;
  * O primeiro objeto a receber uma requisição de uma inteface grafica com o usuário se chama
  * controlador, ele define o fluxo de execução da aplicação.+-
  */
-public interface IAdapter_SistemaContabil__ {
+public interface IAdapter_SistemaContabil {
 	void finalizarVenda();
 	void registrarImposto();
 }

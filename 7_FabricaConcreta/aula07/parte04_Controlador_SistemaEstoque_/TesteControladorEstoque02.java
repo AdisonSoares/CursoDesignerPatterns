@@ -1,10 +1,10 @@
-package aula07.parte04_Controlador_SistemaEstoque;
+package aula07.parte04_Controlador_SistemaEstoque_;
 
-public class TesteControladorEstoque02__ {
+public class TesteControladorEstoque02 {
 	public static void testeSistemaEstoqueControlador() {
 	
-		Controlador_SistemaEstoque__ controladorSistemaEstoque;
-		controladorSistemaEstoque = new Controlador_SistemaEstoque__();
+		Controlador_SistemaEstoque controladorSistemaEstoque;
+		controladorSistemaEstoque = new Controlador_SistemaEstoque();
 		
 		System.out.println("Testando a integração do sistema estoque ItauTec");
 		controladorSistemaEstoque.criacaoAdapterSistemaEstoque("ItauTec");

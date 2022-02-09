@@ -1,4 +1,4 @@
-package aula03.parte02NovaFuncionalidade_;
+package aula03.parte02NovaFuncionalidade;
 
 /**
  * @RegraDeNegocio

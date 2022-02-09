@@ -1,4 +1,4 @@
-package aula07.parte03_Adapter_SistemaEstoque;
+package aula07.parte03_Adapter_SistemaEstoque_;
 
 /**
  * @FabricaConcreta permite desacoplar a criação de seus codigos clientes,
@@ -21,7 +21,7 @@ package aula07.parte03_Adapter_SistemaEstoque;
  * O primeiro objeto a receber uma requisição de uma inteface grafica com o usuário se chama
  * controlador, ele define o fluxo de execução da aplicação.+-
  */
-public interface IAdapter_SistemaEstoque__ {
+public interface IAdapter_SistemaEstoque {
 	void diminuirItem();
 	void atualizarItem();
 }

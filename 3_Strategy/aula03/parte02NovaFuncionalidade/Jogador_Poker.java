@@ -1,14 +1,13 @@
-package aula03.parte02NovaFuncionalidade_;
+package aula03.parte02NovaFuncionalidade;
 
 /**
  * @RegraDeNegocio
  * O jogador terá nome, treino, competição e estratégia própria.
  * 
  * @Classe que vai implementar as caracteristicas especificas
- * do jogador de xadrez.
+ * do jogador de poker.
  * 
- * @Iteração da caracteristica de corrida do jogador e de um novo tipo
- * de jogador.
+ * @Iteração da caracteristica de corrida do jogador e de um novo tipo.
  * 
  * @Problemática
  * A funcionalidade exigida de corrida, obrigatoriamente, precisa
@@ -21,18 +20,18 @@ package aula03.parte02NovaFuncionalidade_;
  * pode ser melhor otimizada para deixar menos repetitiva a sua edição
  * aos diferentes tipos de comportamentos das classes jogadores.
  */
-public class Jogador_Xadrez extends Jogador{
+public class Jogador_Poker extends Jogador{
 
 	//Método construtor
-	public Jogador_Xadrez() {
+	public Jogador_Poker() {
 	}
-	public Jogador_Xadrez(String nome) {
+	public Jogador_Poker(String nome) {
 		super.setNome(nome);
 	}
-	
+
 	@Override
 	public void estrategia() {
-		System.out.println("O jogador de xadrez "+getNome()+" começa com estrategias padronizadas e depois se adapta");
+		System.out.println("O jogador de poker "+getNome()+" não expressa emoçoes durante as jogadas");
 	}
 	
 	public void correr() {
