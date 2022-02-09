@@ -1,4 +1,4 @@
-package aula02.parte02_GridContainer_;
+package aula02.parte02_GridContainer;
 import java.util.ArrayList;
 import java.util.List;
 

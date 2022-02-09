@@ -1,4 +1,4 @@
-package aula02.parte02_GridContainer_;
+package aula02.parte02_GridContainer;
 
 /**
  * @Classe main para teste
