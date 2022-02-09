@@ -1,4 +1,4 @@
-package aula02.parte03_FlowContainerNovaFuncionalidade_;
+package aula02.parte03_FlowContainerNovaFuncionalidade;
 
 /**
  * @Classe para estruturar o funcionamento
