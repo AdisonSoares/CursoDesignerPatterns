@@ -1,4 +1,4 @@
-package aula02.parte04_GridContainerNovaFuncionalidade_;
+package aula02.parte04_GridContainerNovaFuncionalidade;
 
 /**
  * @Classe main para teste

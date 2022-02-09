@@ -1,4 +1,4 @@
-package aula02.parte04_GridContainerNovaFuncionalidade_;
+package aula02.parte04_GridContainerNovaFuncionalidade;
 import java.util.Arrays;
 
 /**
@@ -10,18 +10,18 @@ import java.util.Arrays;
  * @Implementação da classe 
  * Container para adicionar, remover e exibir a lista.
  * 
-* @Iteração de um novo requisito/funcionalidade borda pontilhada ao redor.
+ * @Iteração de um novo requisito/funcionalidade borda solida/pontilhada ao redor.
  * 
  * @PrincípioDeFavorecimentoDaComposiçãoSobreHerança
  * Principio de designer simples, outros tipos de designes
  * se baseiam nela para confecção do arranjo entre as classes envolvidas
  * do designer em específico, nesse exemplo se programa para INTERFACE.
  */
-public class RedeContainerBordaPontilhada extends Container{
+public class RedeContainer extends Container{
 	private Component[][] elementosArray;
 	private int linha, coluna, altura, largura;
 	
-	public RedeContainerBordaPontilhada(int largura, int altura) {
+	public RedeContainer(int largura, int altura) {
 		this.largura = largura;
 		this.altura = altura;
 		elementosArray = new Component[largura][altura]; 
@@ -57,7 +57,6 @@ public class RedeContainerBordaPontilhada extends Container{
 	@Override
 	public void exibir() {
 		System.out.println("Container utilizado - Rede Container");
-		System.out.println("Contem uma borda pontilhada ao redor");
 		System.out.println("Elementos presentes nesse container:");
 		System.out.println(Arrays.deepToString(elementosArray));
 		System.out.println("Usando herança para fechar o container");
