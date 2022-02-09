@@ -1,4 +1,4 @@
-package aula03.parte03NovaFuncionalidadeOtimizada;
+package aula03.parte03NovaFuncionalidadeOtimizada_;
 
 public class Teste03 {
 	public static void main(String[] args) {
