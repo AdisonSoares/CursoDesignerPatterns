@@ -1,4 +1,4 @@
-package aula04.parte06AdapterClass_Propriedades_;
+package aula04.parte06AdapterClass_Propriedades;
 
 public class Rifle implements IArma_Target {
 
