@@ -1,4 +1,4 @@
-package aula04.parte05AdapterClass_;
+package aula04.parte05AdapterClass;
 
 public class Pistola implements IArma {
 
