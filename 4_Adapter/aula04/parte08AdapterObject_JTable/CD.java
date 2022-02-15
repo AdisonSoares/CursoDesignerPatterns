@@ -1,4 +1,4 @@
-package aula04.parte08AdapterObject_JTable_;
+package aula04.parte08AdapterObject_JTable;
 
 /**
  * @ObjectAdapter possui a mesma estrutura de um class adapter, tendo
