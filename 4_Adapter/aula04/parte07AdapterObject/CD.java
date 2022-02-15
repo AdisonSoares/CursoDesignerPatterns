@@ -1,4 +1,4 @@
-package aula04.parte07AdapterObject_;
+package aula04.parte07AdapterObject;
 
 /**
  * @ObjectAdapter possui a mesma estrutura de um class adapter, tendo como diferencial
