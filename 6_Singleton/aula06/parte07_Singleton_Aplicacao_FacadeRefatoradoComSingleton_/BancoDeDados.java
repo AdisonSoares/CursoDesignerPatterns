@@ -1,4 +1,6 @@
-package aula06.parte07_Singleton_Aplicacao_FacadeRefatoradoComSingleton;
+package aula06.parte07_Singleton_Aplicacao_FacadeRefatoradoComSingleton_;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @Facade vem de fachada, uma interface que unifica
@@ -43,28 +45,46 @@ package aula06.parte07_Singleton_Aplicacao_FacadeRefatoradoComSingleton;
  * uma super classe, caso edite o nome da assinatura da classe 
  * ela perde a referência.
  */
-public class ClienteSemFacade {
-	public static void main(String[] args) {
-
-		BancoDeDados bancoDeDados = new BancoDeDados();
-
-		Cliente paiva = new Cliente(01, "Paiva");
-		
-		bancoDeDados.addCliente(paiva);
-		
-		CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
-		
-		paiva.setCarrinhoDeCompras(carrinho);
-		
+public class BancoDeDados {
+	private List<Cliente> clientes;
+	private List<Produto> produtos;
 	
-		Produto notebook = bancoDeDados.selecionarProduto(2);
-		Produto mouse = bancoDeDados.selecionarProduto(3);
-
-		paiva.getCarrinhoDeCompras().addProduto(notebook);
-		paiva.getCarrinhoDeCompras().addProduto(mouse);
-	
-		
-		double total = paiva.getCarrinhoDeCompras().getTotal();
-		bancoDeDados.processoDePagamento(paiva, total);
+	public BancoDeDados() {
+		clientes = new ArrayList<Cliente>();
+		produtos = new ArrayList<Produto>();
+		produtos.add(new Produto(2,"Notebook", 1200.50));
+		produtos.add(new Produto(3,"Mouse", 14.50));
 	}
+	
+	public Cliente selecionarCliente(int id) {
+		for (Cliente cliente : clientes) {
+			if(cliente.getId() == id) {
+				return cliente;
+			}
+		}
+		return null;
+	}
+	
+	public Produto selecionarProduto(int id) {
+		for (Produto produto : produtos) {
+			if(produto.getId() == id) {
+				return produto;
+			}
+		}
+		return null;
+	}
+	
+	public void processoDePagamento(Cliente cliente, double total) {
+		System.out.println("Processando o pagamento do cliente \n"+cliente);
+		System.out.println("Pagamento aceito no Total de R$ "+total);
+	}
+	
+	public void addCliente(Cliente cliente) {
+		clientes.add(cliente);
+	}
+	
+	public void addProduto(Produto produto) {
+		produtos.add(produto);
+	}
+	
 }

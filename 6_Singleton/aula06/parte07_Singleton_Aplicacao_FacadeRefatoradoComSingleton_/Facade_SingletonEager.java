@@ -1,4 +1,4 @@
-package aula06.parte07_Singleton_Aplicacao_FacadeRefatoradoComSingleton;
+package aula06.parte07_Singleton_Aplicacao_FacadeRefatoradoComSingleton_;
 
 /**
  * @Principio_Aplicado na classe facade, no acoplamento ao 
