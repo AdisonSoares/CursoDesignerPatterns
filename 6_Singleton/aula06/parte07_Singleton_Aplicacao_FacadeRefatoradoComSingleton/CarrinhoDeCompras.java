@@ -1,4 +1,4 @@
-package aula06.parte07_Singleton_Aplicacao_FacadeRefatoradoComSingleton_;
+package aula06.parte07_Singleton_Aplicacao_FacadeRefatoradoComSingleton;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package aula06.parte07_Singleton_Aplicacao_FacadeRefatoradoComSingleton_;
+package aula06.parte07_Singleton_Aplicacao_FacadeRefatoradoComSingleton;
 
 /**
  * @Facade vem de fachada, uma interface que unifica
@@ -43,21 +43,41 @@ package aula06.parte07_Singleton_Aplicacao_FacadeRefatoradoComSingleton_;
  * uma super classe, caso edite o nome da assinatura da classe 
  * ela perde a referência.
  */
-public class FacadeCliente {
-	public static void main(String[] args) {
-		//Criação do singleton eager
-		Facade_SingletonEager facade01 = Facade_SingletonEager.getInstancia();
-		Facade_SingletonEager facade02 = Facade_SingletonEager.getInstancia();
-		
-		//Formalizando a compra
-		facade01.registroCliente(01, "Paiva");
-		facade01.compraIniciada(02, 01);
-		facade01.compraIniciada(03, 01);
-		facade01.finalizandoCompra(01);
-		
-		System.out.println();
-		
-		//Teste de aprovação do objeto unico - singleton
-		System.out.println(facade01==facade02 ? "Instancias/objetos iguais" : "Instancias/objetos diferentes");
+public class Produto {
+	private int id;
+	private String nome;
+	private double preco;
+	
+	public Produto(int id, String nome, double preco) {
+		this.id = id;
+		this.nome = nome;
+		this.preco = preco;
 	}
+
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public double getPreco() {
+		return preco;
+	}
+	public void setPreco(double preco) {
+		this.preco = preco;
+	}
+	
+	@Override
+	public String toString() {
+		return "Product ID....: "+this.id+"\n"+
+				"Product name....: "+this.nome+"\n"+
+				"Product price....: "+this.preco+"\n";
+	}	
 }

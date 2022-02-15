@@ -1,4 +1,6 @@
-package aula06.parte07_Singleton_Aplicacao_FacadeRefatoradoComSingleton_;
+package aula06.parte07_Singleton_Aplicacao_FacadeRefatoradoComSingleton;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @Facade vem de fachada, uma interface que unifica
@@ -43,41 +45,46 @@ package aula06.parte07_Singleton_Aplicacao_FacadeRefatoradoComSingleton_;
  * uma super classe, caso edite o nome da assinatura da classe 
  * ela perde a referência.
  */
-public class Produto {
-	private int id;
-	private String nome;
-	private double preco;
+public class BancoDeDados {
+	private List<Cliente> clientes;
+	private List<Produto> produtos;
 	
-	public Produto(int id, String nome, double preco) {
-		this.id = id;
-		this.nome = nome;
-		this.preco = preco;
-	}
-
-	
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
-	public String getNome() {
-		return nome;
-	}
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-	public double getPreco() {
-		return preco;
-	}
-	public void setPreco(double preco) {
-		this.preco = preco;
+	public BancoDeDados() {
+		clientes = new ArrayList<Cliente>();
+		produtos = new ArrayList<Produto>();
+		produtos.add(new Produto(2,"Notebook", 1200.50));
+		produtos.add(new Produto(3,"Mouse", 14.50));
 	}
 	
-	@Override
-	public String toString() {
-		return "Product ID....: "+this.id+"\n"+
-				"Product name....: "+this.nome+"\n"+
-				"Product price....: "+this.preco+"\n";
-	}	
+	public Cliente selecionarCliente(int id) {
+		for (Cliente cliente : clientes) {
+			if(cliente.getId() == id) {
+				return cliente;
+			}
+		}
+		return null;
+	}
+	
+	public Produto selecionarProduto(int id) {
+		for (Produto produto : produtos) {
+			if(produto.getId() == id) {
+				return produto;
+			}
+		}
+		return null;
+	}
+	
+	public void processoDePagamento(Cliente cliente, double total) {
+		System.out.println("Processando o pagamento do cliente \n"+cliente);
+		System.out.println("Pagamento aceito no Total de R$ "+total);
+	}
+	
+	public void addCliente(Cliente cliente) {
+		clientes.add(cliente);
+	}
+	
+	public void addProduto(Produto produto) {
+		produtos.add(produto);
+	}
+	
 }
