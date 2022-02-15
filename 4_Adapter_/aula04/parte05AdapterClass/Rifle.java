@@ -1,4 +1,4 @@
-package aula04.parte05AdapterClass_;
+package aula04.parte05AdapterClass;
 
 public class Rifle implements IArma {
 

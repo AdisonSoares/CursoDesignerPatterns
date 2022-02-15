@@ -1,4 +1,4 @@
-package aula04.parte05AdapterClass_;
+package aula04.parte05AdapterClass;
 
 public class Teste02_AdapterClass {
 	public static void main(String[] args) {
