@@ -1,4 +1,4 @@
-package aula04.parte01ClasseAbstrata_Conceito_;
+package aula04.parte01ClasseAbstrata_Conceito;
 
 /**
  * @PrimeiraRegraInterfaces não se pode ter construtores, todos os métodos são
@@ -21,12 +21,12 @@ package aula04.parte01ClasseAbstrata_Conceito_;
  * @Programar_para_interface em java, significa tanto programar para uma
  * interface quanto para uma classe abstrata.
  * 
- * @InterfaceRepresenta um compromisso de que os métodos executarão as
- * operaçoes impostas por seus nomes, implementação é o código 
- * que reside dentro desses métodos.
+ * @InterfaceRepresenta um compromisso de que os métodos executarão as 
+ * operaçoes impostas por seus nomes, implementação é o código que
+ * reside dentro desses métodos.
  * 
  * @Entendimento_de_uma_interface, em java, se dá por meio de uma abstração,
- * separando o que ela deve fazer de sua implementação, como o objeto deve 
+ * separando o que ela deve fazer de sua implementação, como o objeto deve
  * fazer.
  * 
  * @Regras_adicionais_interface
@@ -47,10 +47,12 @@ package aula04.parte01ClasseAbstrata_Conceito_;
  * 
  * @MétodoAbstrato não possui implementação.
  */
-public interface Interface02 {
-	public static final int CONSTANTE02 = 2;
-	public int CONSTANTE03 = 3;
+public interface Interface01 extends ISuperInterface01, ISuperInterface02{
+	public static final int CONSTANTE01 = 1;
 	
-	void metodo01Interface02();
-	public void metodo02Interface02();
+	void metodo01Interface01();
+	public void metodo02Interface01();
+	public abstract void metodo03Interface01();
+	abstract void metodo04Interface01();
+	abstract public void metodo05Interface01();
 }
