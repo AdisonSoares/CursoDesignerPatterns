@@ -1,4 +1,4 @@
-package aula04.parte07AdapterObject_;
+package aula04.parte07AdapterObject;
 import java.awt.BorderLayout;
 import java.awt.Container;
 
