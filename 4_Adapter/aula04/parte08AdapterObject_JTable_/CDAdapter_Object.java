@@ -1,4 +1,4 @@
-package aula04.parte08AdapterObject_JTable;
+package aula04.parte08AdapterObject_JTable_;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.table.AbstractTableModel;

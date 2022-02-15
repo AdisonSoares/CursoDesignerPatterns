@@ -1,4 +1,4 @@
-package aula04.parte08AdapterObject_JTable;
+package aula04.parte08AdapterObject_JTable_;
 import java.awt.BorderLayout;
 import java.awt.Container;
 import javax.swing.JFrame;
