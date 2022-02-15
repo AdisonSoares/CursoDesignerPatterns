@@ -1,4 +1,4 @@
-package aula05.parte03Facade_Fachada_;
+package aula05.parte03Facade_Fachada;
 
 public class ClienteSemFacade {
 	public static void main(String[] args) {
