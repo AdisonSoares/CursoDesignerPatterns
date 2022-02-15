@@ -1,4 +1,4 @@
-package aula05.parte01Facade_Fachada_;
+package aula05.parte01Facade_Fachada;
 
 public class Produto {
 	private int id;
