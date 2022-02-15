@@ -1,4 +1,4 @@
-package aula05.parte02Facade_Fachada_;
+package aula05.parte02Facade_Fachada;
 
 public class Cliente {
 	private int id;
