@@ -1,4 +1,4 @@
-package aula07.parte01_Adapter_SistemaContabil_;
+package aula07.parte01_Adapter_SistemaContabil;
 
 /**
  * @FabricaConcreta permite desacoplar a criação de seus codigos clientes,
