@@ -14,6 +14,10 @@ public class TesteControladorContabil01 {
 		System.out.println("Testando a integração do sistema contabil IBM");
 		controladorSistemaContabil.criacaoAdapterSistemaContabil("IBM");
 		controladorSistemaContabil.calculoImpostoControlador();
+		
+		System.out.println("Testando a integração do sistema contabil SAP");
+		controladorSistemaContabil.criacaoAdapterSistemaContabil("SAP");
+		controladorSistemaContabil.calculoImpostoControlador();
 
 	}
 	

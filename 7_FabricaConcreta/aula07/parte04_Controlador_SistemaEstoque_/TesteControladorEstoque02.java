@@ -14,6 +14,10 @@ public class TesteControladorEstoque02 {
 		System.out.println("Testando a integração do sistema estoque IBM");
 		controladorSistemaEstoque.criacaoAdapterSistemaEstoque("IBM");
 		controladorSistemaEstoque.atualizarEstoque();
+		
+		System.out.println("Testando a integração do sistema estoque SAP");
+		controladorSistemaEstoque.criacaoAdapterSistemaEstoque("SAP");
+		controladorSistemaEstoque.atualizarEstoque();
 
 	}
 	
