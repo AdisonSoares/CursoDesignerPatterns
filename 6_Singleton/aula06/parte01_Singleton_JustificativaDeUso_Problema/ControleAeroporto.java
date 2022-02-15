@@ -1,4 +1,4 @@
-package aula06.parte01_Singleton_JustificativaDeUso_Problema_;
+package aula06.parte01_Singleton_JustificativaDeUso_Problema;
 //Pattern atual Fábrica Concreta.
 
 /**
