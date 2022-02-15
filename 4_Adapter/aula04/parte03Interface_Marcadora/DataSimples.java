@@ -1,4 +1,4 @@
-package aula04.parte03Interface_Marcadora_;
+package aula04.parte03Interface_Marcadora;
 
 /**
  * @Regras_adicionais_interface_marcadora
