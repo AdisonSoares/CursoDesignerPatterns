@@ -1,4 +1,4 @@
-package aula06.parte02_Singleton_Aplicacao_Solucao_;
+package aula06.parte02_Singleton_Aplicacao_Solucao;
 
 /**
  * @Problemática

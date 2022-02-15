@@ -1,4 +1,5 @@
-package aula06.parte02_Singleton_Aplicacao_Solucao_;
+package aula06.parte02_Singleton_Aplicacao_Solucao;
+
 
 /**
  * @SegredoDoSingleton é criar métodos e variaveis que vão controlar
@@ -70,38 +71,15 @@ package aula06.parte02_Singleton_Aplicacao_Solucao_;
  * classe + .getInstancia(); método estatico dessa forma ambos vão apontar
  * ao mesmo objeto, agindo de forma sincronada. 
  */
-public class ControleAeroporto {
-	private boolean permissaoPousar;//ToLand
-	private boolean permissaoDecolar;//ToDeparture
-	private static ControleAeroporto instancia = new ControleAeroporto();
-	
-	private ControleAeroporto() {
-		permissaoPousar = false;
-		permissaoDecolar = true;
+public class Singleton_Simples {
+	public static void main(String[] args) {
+		
+	}
+	private Singleton_Simples() {
+		
 	}
 	
-	//Comunicação do objeto para outras classes, sem precisar instanciar com new
-	public static ControleAeroporto getInstancia() {
-		return instancia;
-	}
-	
-	public void solicitarPermissaoPousa() {
-		if (permissaoPousar) {
-			System.out.println("Permitido o pouso!");
-			permissaoPousar = false;
-			permissaoDecolar = true;
-		} else {
-			System.out.println("Permissão para outro avião pousar negada!");
-		}
-	}
-	
-	public void solicitarPermissaoDecolar() {
-		if (permissaoDecolar) {
-			System.out.println("Permitida a decolagem!");
-			permissaoDecolar = false;
-			permissaoPousar = true;
-		} else {
-			System.out.println("Permissão para outro avião decolar negada!");
-		}
+	public static Singleton_Simples getInstancia() {
+		return new Singleton_Simples();
 	}
 }
