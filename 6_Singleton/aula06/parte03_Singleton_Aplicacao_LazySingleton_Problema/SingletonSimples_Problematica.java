@@ -1,4 +1,4 @@
- package aula06.parte03_Singleton_Aplicacao_LazySingleton_Problema_;
+ package aula06.parte03_Singleton_Aplicacao_LazySingleton_Problema;
 
 /**
  * @SegredoDoSingleton é criar métodos e variaveis que vão controlar
