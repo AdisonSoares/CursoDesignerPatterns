@@ -1,4 +1,4 @@
-package aula04.parte01ClasseAbstrata_Conceito_;
+package aula04.parte01ClasseAbstrata_Conceito;
 
 /**
  * @ClasseAbstrata em java pode ter qualquer variável e qualquer modificador
