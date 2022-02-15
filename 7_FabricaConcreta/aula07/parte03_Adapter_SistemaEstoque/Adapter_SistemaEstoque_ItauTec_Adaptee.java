@@ -1,13 +1,14 @@
-package aula07.parte03_Adapter_SistemaEstoque_;
+package aula07.parte03_Adapter_SistemaEstoque;
 
 import aula07.parte01_Adaptee_SistemaEstoque.SistemaEstoqueAdaptee;
 
-public class Adapter_SistemaEstoque_SAP_Adaptee implements IAdapter_SistemaEstoque{
+public class Adapter_SistemaEstoque_ItauTec_Adaptee implements IAdapter_SistemaEstoque{
 	private SistemaEstoqueAdaptee sistemaEstoqueAdaptee;
 	
-	public Adapter_SistemaEstoque_SAP_Adaptee() {
-		sistemaEstoqueAdaptee = new SistemaEstoqueAdaptee("SAP");
+	public Adapter_SistemaEstoque_ItauTec_Adaptee() {
+		sistemaEstoqueAdaptee = new SistemaEstoqueAdaptee("ItauTec");
 	}
+
 
 	@Override
 	public void diminuirItem() {

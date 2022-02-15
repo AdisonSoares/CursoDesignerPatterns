@@ -1,4 +1,4 @@
-package aula07.parte03_Adapter_SistemaEstoque_;
+package aula07.parte03_Adapter_SistemaEstoque;
 
 /**
  * @FabricaConcreta permite desacoplar a criação de seus codigos clientes,
