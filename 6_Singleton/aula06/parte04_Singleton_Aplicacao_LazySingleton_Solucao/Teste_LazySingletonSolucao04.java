@@ -1,4 +1,4 @@
-package aula06.parte04_Singleton_Aplicacao_LazySingleton_Solucao_;
+package aula06.parte04_Singleton_Aplicacao_LazySingleton_Solucao;
 
 
 /**
