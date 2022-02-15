@@ -1,4 +1,4 @@
-package aula04.parte02Interface_Conceito_;
+package aula04.parte02Interface_Conceito;
 
 /**
  * 

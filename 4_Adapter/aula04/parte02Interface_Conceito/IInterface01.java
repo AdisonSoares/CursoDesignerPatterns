@@ -1,4 +1,4 @@
-package aula04.parte02Interface_Conceito_;
+package aula04.parte02Interface_Conceito;
 
 /**
  * 
@@ -13,13 +13,13 @@ package aula04.parte02Interface_Conceito_;
  * @Métodos são publicos e abstratos mesmo que não sejam 
  * assim declarados explicitamente.
  * 
- * @Interfaces_e_ClassesAbstratas simplificam e tornam os designers mais
+ * @Interfaces_e_ClassesAbstratas simplificam e tornam os designers mais 
  * fortes, ambas podem ser instanciadas diretamente por outras classes.
  *
  * @Interface_de_uma_classe é o conjunto de métodos e atributos que a classe, 
  * seja interface ou abstrata, permite que objetos de outras classes acessem.
  * 
- * @Programar_para_interface em java, significa tanto programar para uma 
+ * @Programar_para_interface em java, significa tanto programar para uma
  * interface quanto para uma classe abstrata.
  * 
  * @InterfaceRepresenta um compromisso de que os métodos executarão as
@@ -48,10 +48,12 @@ package aula04.parte02Interface_Conceito_;
  * 
  * @MétodoAbstrato não possui implementação.
  */
-public interface IInterface02 {
-	public static final int CONSTANTE02 = 2;
-	public int CONSTANTE03 = 3;
+public interface IInterface01 extends ISuperInterface01, ISuperInterface02{
+	public static final int CONSTANTE01 = 1;
 	
-	void metodo01Interface02();
-	public void metodo02Interface02();
+	void metodo01Interface01();
+	public void metodo02Interface01();
+	public abstract void metodo03Interface01();
+	abstract void metodo04Interface01();
+	abstract public void metodo05Interface01();
 }
