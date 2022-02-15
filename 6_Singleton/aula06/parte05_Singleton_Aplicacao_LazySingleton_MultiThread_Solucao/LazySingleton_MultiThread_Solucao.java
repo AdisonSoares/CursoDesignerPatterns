@@ -1,4 +1,4 @@
- package aula06.parte05_Singleton_Aplicacao_LazySingleton_MultiThread_Solucao_;
+ package aula06.parte05_Singleton_Aplicacao_LazySingleton_MultiThread_Solucao;
 
 /**
  * @SegredoDoSingleton é criar métodos e variaveis que vão controlar
