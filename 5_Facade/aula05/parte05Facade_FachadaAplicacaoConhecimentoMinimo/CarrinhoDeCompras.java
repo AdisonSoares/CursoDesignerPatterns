@@ -1,4 +1,4 @@
-package aula05.parte05Facade_FachadaAplicacaoConhecimentoMinimo_;
+package aula05.parte05Facade_FachadaAplicacaoConhecimentoMinimo;
 
 import java.util.ArrayList;
 import java.util.List;

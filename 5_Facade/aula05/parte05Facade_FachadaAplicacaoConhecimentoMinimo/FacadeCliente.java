@@ -1,4 +1,4 @@
-package aula05.parte05Facade_FachadaAplicacaoConhecimentoMinimo_;
+package aula05.parte05Facade_FachadaAplicacaoConhecimentoMinimo;
 
 /**
  * @Facade vem de fachada, uma interface que unifica
@@ -43,63 +43,14 @@ package aula05.parte05Facade_FachadaAplicacaoConhecimentoMinimo_;
  * uma super classe, caso edite o nome da assinatura da classe 
  * ela perde a referência.
  */
-public class Cliente {
-	
-	private int id;
-	private String nome;
-	private CarrinhoDeCompras carrinho;
-	
-
-	public Cliente(int id, String nome) {
-		this.id = id;
-		this.nome = nome;
-		this.carrinho = new CarrinhoDeCompras();
+public class FacadeCliente {
+	public static void main(String[] args) {
+		Facade facade = new Facade();
+		
+		//Formalizando a compra
+		facade.registroCliente(01, "Paiva");
+		facade.compraIniciada(02, 01);
+		facade.compraIniciada(03, 01);
+		facade.finalizandoCompra(01);
 	}
-	
-	public void setCarrinhoDeCompras(CarrinhoDeCompras carrinho) {
-		this.carrinho = carrinho;
-	}
-	public CarrinhoDeCompras getCarrinhoDeCompras() {
-		return carrinho;
-	}
-	
-	
-	//Métodos Get e Set
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
-	public String getNome() {
-		return nome;
-	}
-	public void setName(String nome) {
-		this.nome = nome;
-	}
-	
-	@Override
-	public String toString() {
-		return "Identificador cliente: "+this.id+"\n"+
-				"Nome do cliente: "+this.nome+"\n";
-	}
-
-	public double calcularTotal() {
-		// TODO Auto-generated method stub
-		return carrinho.getTotal();
-	}
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

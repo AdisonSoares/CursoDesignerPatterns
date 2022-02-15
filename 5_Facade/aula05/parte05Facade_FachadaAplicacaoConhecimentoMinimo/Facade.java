@@ -1,6 +1,11 @@
-package aula05.parte05Facade_FachadaAplicacaoConhecimentoMinimo_;
+package aula05.parte05Facade_FachadaAplicacaoConhecimentoMinimo;
 
 /**
+ * @Principio_Aplicado na classe facade, no acoplamento ao 
+ * carrinho de compras, está sendo acoplado mais de um método,
+ * para resolver isso é preciso deixar a criação do carrinho 
+ * de compras para o cliente, objetivo é reduzir o acoplamento.
+ * 
  * @Facade vem de fachada, uma interface que unifica
  * um conjunto de interfaces ou subsistemas, define
  * uma interface de nível mais alto, tornando o 
@@ -43,28 +48,39 @@ package aula05.parte05Facade_FachadaAplicacaoConhecimentoMinimo_;
  * uma super classe, caso edite o nome da assinatura da classe 
  * ela perde a referência.
  */
-public class ClienteSemFacade {
-	public static void main(String[] args) {
-
-		BancoDeDados bancoDeDados = new BancoDeDados();
-
-		Cliente paiva = new Cliente(01, "Paiva");
-		
-		bancoDeDados.addCliente(paiva);
-		
-		CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
-		
-		paiva.setCarrinhoDeCompras(carrinho);
-		
+public class Facade {
+	private BancoDeDados bancoDeDados;
+	//private CarrinhoDeCompras carrinho;
+	private Cliente cliente;
+	private Produto produto;
 	
-		Produto notebook = bancoDeDados.selecionarProduto(2);
-		Produto mouse = bancoDeDados.selecionarProduto(3);
-
-		paiva.getCarrinhoDeCompras().addProduto(notebook);
-		paiva.getCarrinhoDeCompras().addProduto(mouse);
-	
-		
-		double total = paiva.getCarrinhoDeCompras().getTotal();
-		bancoDeDados.processoDePagamento(paiva, total);
+	//Ligação ao banco de dados
+	public Facade() {
+		bancoDeDados = new BancoDeDados();
 	}
+	
+	//Criação do cliente associado a um carrinho de compras e ao banco de dados
+	public void registroCliente( int id, String nome) {
+		cliente = new Cliente(id, nome);
+		//carrinho = new CarrinhoDeCompras(); - na classe cliente foi criado no construtor
+		//cliente.setCarrinhoDeCompras(carrinho); - na classe cliente foi passado pelo construtor 
+		bancoDeDados.addCliente(cliente);
+	}
+	
+	//Comprar produto
+	public void compraIniciada(int idProduto, int idCliente) {
+		cliente = bancoDeDados.selecionarCliente(idCliente);
+		produto = bancoDeDados.selecionarProduto(idProduto);
+		cliente.getCarrinhoDeCompras().addProduto(produto);
+	}
+	
+	//Finalização do pagamento
+	public void finalizandoCompra(int idCliente) {
+		cliente = bancoDeDados.selecionarCliente(idCliente);
+		double total = cliente.calcularTotal();
+		bancoDeDados.processoDePagamento(cliente, total);
+	}
+	
+	
+
 }

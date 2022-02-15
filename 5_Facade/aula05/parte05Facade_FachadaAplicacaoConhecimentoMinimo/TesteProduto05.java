@@ -1,5 +1,5 @@
-package aula05.parte05Facade_FachadaAplicacaoConhecimentoMinimo_;
-
+package aula05.parte05Facade_FachadaAplicacaoConhecimentoMinimo;
+ 
 /**
  * @Facade vem de fachada, uma interface que unifica
  * um conjunto de interfaces ou subsistemas, define
@@ -43,41 +43,9 @@ package aula05.parte05Facade_FachadaAplicacaoConhecimentoMinimo_;
  * uma super classe, caso edite o nome da assinatura da classe 
  * ela perde a referência.
  */
-public class Produto {
-	private int id;
-	private String nome;
-	private double preco;
-	
-	public Produto(int id, String nome, double preco) {
-		this.id = id;
-		this.nome = nome;
-		this.preco = preco;
+public class TesteProduto05 {
+	public static void main(String[] args) {
+		Produto produto = new Produto(01,"CD",7.50);
+		System.out.println(produto);
 	}
-
-	
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
-	public String getNome() {
-		return nome;
-	}
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-	public double getPreco() {
-		return preco;
-	}
-	public void setPreco(double preco) {
-		this.preco = preco;
-	}
-	
-	@Override
-	public String toString() {
-		return "Product ID....: "+this.id+"\n"+
-				"Product name....: "+this.nome+"\n"+
-				"Product price....: "+this.preco+"\n";
-	}	
 }
