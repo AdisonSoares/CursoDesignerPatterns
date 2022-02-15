@@ -1,4 +1,5 @@
-package aula05.parte04Facade_FachadaAplicacao_;
+package aula05.parte04Facade_FachadaAplicacao;
+
 
 /**
  * @Facade vem de fachada, uma interface que unifica
@@ -43,28 +44,41 @@ package aula05.parte04Facade_FachadaAplicacao_;
  * uma super classe, caso edite o nome da assinatura da classe 
  * ela perde a referência.
  */
-public class ClienteSemFacade {
-	public static void main(String[] args) {
-
-		BancoDeDados bancoDeDados = new BancoDeDados();
-
-		Cliente paiva = new Cliente(01, "Paiva");
-		
-		bancoDeDados.addCliente(paiva);
-		
-		CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
-		
-		paiva.setCarrinhoDeCompras(carrinho);
-		
+public class Produto {
+	private int id;
+	private String nome;
+	private double preco;
 	
-		Produto notebook = bancoDeDados.selecionarProduto(2);
-		Produto mouse = bancoDeDados.selecionarProduto(3);
-
-		paiva.getCarrinhoDeCompras().addProduto(notebook);
-		paiva.getCarrinhoDeCompras().addProduto(mouse);
-	
-		
-		double total = paiva.getCarrinhoDeCompras().getTotal();
-		bancoDeDados.processoDePagamento(paiva, total);
+	public Produto(int id, String nome, double preco) {
+		this.id = id;
+		this.nome = nome;
+		this.preco = preco;
 	}
+
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public double getPreco() {
+		return preco;
+	}
+	public void setPreco(double preco) {
+		this.preco = preco;
+	}
+	
+	@Override
+	public String toString() {
+		return "Product ID....: "+this.id+"\n"+
+				"Product name....: "+this.nome+"\n"+
+				"Product price....: "+this.preco+"\n";
+	}	
 }

@@ -1,4 +1,4 @@
-package aula05.parte04Facade_FachadaAplicacao_;
+package aula05.parte04Facade_FachadaAplicacao;
 
 
 /**
@@ -44,41 +44,39 @@ package aula05.parte04Facade_FachadaAplicacao_;
  * uma super classe, caso edite o nome da assinatura da classe 
  * ela perde a referência.
  */
-public class Produto {
-	private int id;
-	private String nome;
-	private double preco;
+public class Facade {
+	private BancoDeDados bancoDeDados;
+	private CarrinhoDeCompras carrinho;
+	private Cliente cliente;
+	private Produto produto;
 	
-	public Produto(int id, String nome, double preco) {
-		this.id = id;
-		this.nome = nome;
-		this.preco = preco;
+	//Ligação ao banco de dados
+	public Facade() {
+		bancoDeDados = new BancoDeDados();
 	}
+	
+	//Criação do cliente com associação a um carrinho de compras e o banco de dados
+	public void registroCliente( int id, String nome) {
+		cliente = new Cliente(id, nome);
+		carrinho = new CarrinhoDeCompras();
+		cliente.setCarrinhoDeCompras(carrinho);
+		bancoDeDados.addCliente(cliente);
+	}
+	
+	//Comprar produto
+	public void compraIniciada(int idProduto, int idCliente) {
+		cliente = bancoDeDados.selecionarCliente(idCliente);
+		produto = bancoDeDados.selecionarProduto(idProduto);
+		cliente.getCarrinhoDeCompras().addProduto(produto);
+	}
+	
+	//Finalização do pagamento
+	public void finalizandoCompra(int idCliente) {
+		cliente = bancoDeDados.selecionarCliente(idCliente);
+		double total = cliente.getCarrinhoDeCompras().getTotal();
+		bancoDeDados.processoDePagamento(cliente, total);
+	}
+	
+	
 
-	
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
-	public String getNome() {
-		return nome;
-	}
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-	public double getPreco() {
-		return preco;
-	}
-	public void setPreco(double preco) {
-		this.preco = preco;
-	}
-	
-	@Override
-	public String toString() {
-		return "Product ID....: "+this.id+"\n"+
-				"Product name....: "+this.nome+"\n"+
-				"Product price....: "+this.preco+"\n";
-	}	
 }

@@ -1,4 +1,4 @@
-package aula05.parte04Facade_FachadaAplicacao_;
+package aula05.parte04Facade_FachadaAplicacao;
 
 /**
  * @Facade vem de fachada, uma interface que unifica
@@ -43,57 +43,28 @@ package aula05.parte04Facade_FachadaAplicacao_;
  * uma super classe, caso edite o nome da assinatura da classe 
  * ela perde a referência.
  */
-public class Cliente {
-	
-	private int id;
-	private String nome;
-	private CarrinhoDeCompras carrinho;
-	
+public class ClienteSemFacade {
+	public static void main(String[] args) {
 
-	public Cliente(int id, String nome) {
-		this.id = id;
-		this.nome = nome;
-	}
-	
-	public void setCarrinhoDeCompras(CarrinhoDeCompras carrinho) {
-		this.carrinho = carrinho;
-	}
-	public CarrinhoDeCompras getCarrinhoDeCompras() {
-		return carrinho;
-	}
-	
-	
-	//Métodos Get e Set
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
-	public String getNome() {
-		return nome;
-	}
-	public void setName(String nome) {
-		this.nome = nome;
-	}
-	
-	@Override
-	public String toString() {
-		return "Identificador cliente: "+this.id+"\n"+
-				"Nome do cliente: "+this.nome+"\n";
-	}
+		BancoDeDados bancoDeDados = new BancoDeDados();
 
+		Cliente paiva = new Cliente(01, "Paiva");
+		
+		bancoDeDados.addCliente(paiva);
+		
+		CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
+		
+		paiva.setCarrinhoDeCompras(carrinho);
+		
+	
+		Produto notebook = bancoDeDados.selecionarProduto(2);
+		Produto mouse = bancoDeDados.selecionarProduto(3);
+
+		paiva.getCarrinhoDeCompras().addProduto(notebook);
+		paiva.getCarrinhoDeCompras().addProduto(mouse);
+	
+		
+		double total = paiva.getCarrinhoDeCompras().getTotal();
+		bancoDeDados.processoDePagamento(paiva, total);
+	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

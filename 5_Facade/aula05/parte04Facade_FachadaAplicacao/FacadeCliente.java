@@ -1,5 +1,4 @@
-package aula05.parte04Facade_FachadaAplicacao_;
-
+package aula05.parte04Facade_FachadaAplicacao;
 
 /**
  * @Facade vem de fachada, uma interface que unifica
@@ -44,39 +43,14 @@ package aula05.parte04Facade_FachadaAplicacao_;
  * uma super classe, caso edite o nome da assinatura da classe 
  * ela perde a referência.
  */
-public class Facade {
-	private BancoDeDados bancoDeDados;
-	private CarrinhoDeCompras carrinho;
-	private Cliente cliente;
-	private Produto produto;
-	
-	//Ligação ao banco de dados
-	public Facade() {
-		bancoDeDados = new BancoDeDados();
+public class FacadeCliente {
+	public static void main(String[] args) {
+		Facade facade = new Facade();
+		
+		//Formalizando a compra
+		facade.registroCliente(01, "Paiva");
+		facade.compraIniciada(02, 01);
+		facade.compraIniciada(03, 01);
+		facade.finalizandoCompra(01);
 	}
-	
-	//Criação do cliente com associação a um carrinho de compras e o banco de dados
-	public void registroCliente( int id, String nome) {
-		cliente = new Cliente(id, nome);
-		carrinho = new CarrinhoDeCompras();
-		cliente.setCarrinhoDeCompras(carrinho);
-		bancoDeDados.addCliente(cliente);
-	}
-	
-	//Comprar produto
-	public void compraIniciada(int idProduto, int idCliente) {
-		cliente = bancoDeDados.selecionarCliente(idCliente);
-		produto = bancoDeDados.selecionarProduto(idProduto);
-		cliente.getCarrinhoDeCompras().addProduto(produto);
-	}
-	
-	//Finalização do pagamento
-	public void finalizandoCompra(int idCliente) {
-		cliente = bancoDeDados.selecionarCliente(idCliente);
-		double total = cliente.getCarrinhoDeCompras().getTotal();
-		bancoDeDados.processoDePagamento(cliente, total);
-	}
-	
-	
-
 }

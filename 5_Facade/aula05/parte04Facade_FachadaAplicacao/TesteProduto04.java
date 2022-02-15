@@ -1,4 +1,4 @@
-package aula05.parte04Facade_FachadaAplicacao_;
+package aula05.parte04Facade_FachadaAplicacao;
 
 public class TesteProduto04 {
 	public static void main(String[] args) {

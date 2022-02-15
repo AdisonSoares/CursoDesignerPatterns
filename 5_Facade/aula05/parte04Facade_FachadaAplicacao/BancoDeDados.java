@@ -1,4 +1,4 @@
-package aula05.parte04Facade_FachadaAplicacao_;
+package aula05.parte04Facade_FachadaAplicacao;
 import java.util.ArrayList;
 import java.util.List;
 
