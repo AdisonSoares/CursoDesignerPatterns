@@ -1,4 +1,4 @@
-package aula06.parte07_Singleton_Aplicacao_FacadeRefatoradoComSingleton_;
+package aula06.parte07_Singleton_Aplicacao_FacadeRefatoradoComSingleton;
 
 /**
  * @Facade vem de fachada, uma interface que unifica
@@ -43,28 +43,21 @@ package aula06.parte07_Singleton_Aplicacao_FacadeRefatoradoComSingleton_;
  * uma super classe, caso edite o nome da assinatura da classe 
  * ela perde a referência.
  */
-public class ClienteSemFacade {
+public class FacadeCliente {
 	public static void main(String[] args) {
-
-		BancoDeDados bancoDeDados = new BancoDeDados();
-
-		Cliente paiva = new Cliente(01, "Paiva");
+		//Criação do singleton eager
+		Facade_SingletonEager facade01 = Facade_SingletonEager.getInstancia();
+		Facade_SingletonEager facade02 = Facade_SingletonEager.getInstancia();
 		
-		bancoDeDados.addCliente(paiva);
+		//Formalizando a compra
+		facade01.registroCliente(01, "Paiva");
+		facade01.compraIniciada(02, 01);
+		facade01.compraIniciada(03, 01);
+		facade01.finalizandoCompra(01);
 		
-		CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
+		System.out.println();
 		
-		paiva.setCarrinhoDeCompras(carrinho);
-		
-	
-		Produto notebook = bancoDeDados.selecionarProduto(2);
-		Produto mouse = bancoDeDados.selecionarProduto(3);
-
-		paiva.getCarrinhoDeCompras().addProduto(notebook);
-		paiva.getCarrinhoDeCompras().addProduto(mouse);
-	
-		
-		double total = paiva.getCarrinhoDeCompras().getTotal();
-		bancoDeDados.processoDePagamento(paiva, total);
+		//Teste de aprovação do objeto unico - singleton
+		System.out.println(facade01==facade02 ? "Instancias/objetos iguais" : "Instancias/objetos diferentes");
 	}
 }
