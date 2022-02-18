@@ -14,3 +14,4 @@ suas vantegens e desvantagens e dando base para o estudos posterior dos demais t
 - State
 - Facade
 - Template Method
+- Conceitos chave
