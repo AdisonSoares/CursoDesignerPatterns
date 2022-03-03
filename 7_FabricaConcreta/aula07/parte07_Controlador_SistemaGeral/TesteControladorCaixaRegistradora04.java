@@ -1,4 +1,4 @@
-package aula07.parte07_Controlador_SistemaGeral_;
+package aula07.parte07_Controlador_SistemaGeral;
 
 public class TesteControladorCaixaRegistradora04 {
 	public static void testeSistemaCaixaControlador() {

@@ -1,4 +1,4 @@
-package aula07.parte07_Controlador_SistemaGeral_;
+package aula07.parte07_Controlador_SistemaGeral;
 
 public class TesteControladorContabil05 {
 	public static void testeSistemaContabilControlador() {
