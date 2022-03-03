@@ -1,9 +1,9 @@
 package aula07.parte07_Controlador_SistemaGeral_;
 
-import aula07.parte03_Adapter_SistemaEstoque_.Adapter_SistemaEstoque_IBM_Adaptee;
-import aula07.parte03_Adapter_SistemaEstoque_.Adapter_SistemaEstoque_ItauTec_Adaptee;
-import aula07.parte03_Adapter_SistemaEstoque_.Adapter_SistemaEstoque_SAP_Adaptee;
-import aula07.parte03_Adapter_SistemaEstoque_.IAdapter_SistemaEstoque;
+import aula07.parte03_Adapter_SistemaEstoque.Adapter_SistemaEstoque_IBM_Adaptee;
+import aula07.parte03_Adapter_SistemaEstoque.Adapter_SistemaEstoque_ItauTec_Adaptee;
+import aula07.parte03_Adapter_SistemaEstoque.Adapter_SistemaEstoque_SAP_Adaptee;
+import aula07.parte03_Adapter_SistemaEstoque.IAdapter_SistemaEstoque;
 
 /**
  * @Problema_fabrica_concreta
