@@ -8,15 +8,18 @@ public class TesteControladorContabil05 {
 		
 		System.out.println("Testando a integração do sistema contabil ItauTec");
 		controladorSistemaContabil.criacaoAdapterSistemaContabil("ItauTec");
-		controladorSistemaContabil.calculoImpostoControlador();
+		//controladorSistemaContabil.calculoImpostoControlador();
 		
 		
 		System.out.println("Testando a integração do sistema contabil IBM");
 		controladorSistemaContabil.criacaoAdapterSistemaContabil("IBM");
-		controladorSistemaContabil.calculoImpostoControlador();
+		//controladorSistemaContabil.calculoImpostoControlador();
 		
 		System.out.println("Testando a integração do sistema contabil SAP");
 		controladorSistemaContabil.criacaoAdapterSistemaContabil("SAP");
+		//controladorSistemaContabil.calculoImpostoControlador();
+		
+		//Exibir
 		controladorSistemaContabil.calculoImpostoControlador();
 
 	}

@@ -4,19 +4,24 @@ public class TesteControladorEstoque06 {
 	public static void testeSistemaEstoqueControlador() {
 	
 		Controlador_SistemaEstoque controladorSistemaEstoque;
+		
 		controladorSistemaEstoque = new Controlador_SistemaEstoque();
 		
+ 
 		System.out.println("Testando a integração do sistema estoque ItauTec");
 		controladorSistemaEstoque.criacaoAdapterSistemaEstoque("ItauTec");
-		controladorSistemaEstoque.atualizarEstoque();
+		//controladorSistemaEstoque.atualizarEstoque();
 		
 		
 		System.out.println("Testando a integração do sistema estoque IBM");
 		controladorSistemaEstoque.criacaoAdapterSistemaEstoque("IBM");
-		controladorSistemaEstoque.atualizarEstoque();
+		//controladorSistemaEstoque.atualizarEstoque();
 		
 		System.out.println("Testando a integração do sistema estoque SAP");
 		controladorSistemaEstoque.criacaoAdapterSistemaEstoque("SAP");
+		//controladorSistemaEstoque.atualizarEstoque();
+		
+		//Exibir
 		controladorSistemaEstoque.atualizarEstoque();
 
 	}

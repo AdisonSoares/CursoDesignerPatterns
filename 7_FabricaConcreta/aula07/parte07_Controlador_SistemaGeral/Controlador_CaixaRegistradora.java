@@ -3,11 +3,9 @@ package aula07.parte07_Controlador_SistemaGeral;
 import aula07.parte01_Adapter_SistemaContabil.Adapter_SistemaContabil_IBM_Adaptee;
 import aula07.parte01_Adapter_SistemaContabil.Adapter_SistemaContabil_ItauTec_Adaptee;
 import aula07.parte01_Adapter_SistemaContabil.Adapter_SistemaContabil_SAP_Adaptee;
-import aula07.parte01_Adapter_SistemaContabil.IAdapter_SistemaContabil;
 import aula07.parte03_Adapter_SistemaEstoque.Adapter_SistemaEstoque_IBM_Adaptee;
 import aula07.parte03_Adapter_SistemaEstoque.Adapter_SistemaEstoque_ItauTec_Adaptee;
 import aula07.parte03_Adapter_SistemaEstoque.Adapter_SistemaEstoque_SAP_Adaptee;
-import aula07.parte03_Adapter_SistemaEstoque.IAdapter_SistemaEstoque;
 
 /**
  * @Problema_fabrica_concreta
@@ -15,10 +13,19 @@ import aula07.parte03_Adapter_SistemaEstoque.IAdapter_SistemaEstoque;
  * sempre os controladores não se consegue desacoplar as 
  * variaçoes da criação de objetos para resolver isso
  * é preciso usar a fabrica concreta.
+ * 
+ * @Duplicacao_de_codigo
+ * Os três controladores estão duplicando o teste para criação 
+ * dos adapters externos.
  */
 public class Controlador_CaixaRegistradora {
-	private IAdapter_SistemaContabil adapterSistemaContabil;
-	private IAdapter_SistemaEstoque adapterSistemaEstoque;
+	private Adapter_SistemaContabil_IBM_Adaptee adapterSistemaContabilIBM;
+	private Adapter_SistemaContabil_ItauTec_Adaptee adapterSistemaContabilItauTec;
+	private Adapter_SistemaContabil_SAP_Adaptee adapterSistemaContabilSAP;
+	
+	private Adapter_SistemaEstoque_IBM_Adaptee adapterSistemaEstoqueIBM;
+	private Adapter_SistemaEstoque_ItauTec_Adaptee adapterSistemaEstoqueItauTec;
+	private Adapter_SistemaEstoque_SAP_Adaptee adapterSistemaEstoqueSAP;
 
 	public Controlador_CaixaRegistradora() {
 		System.out.println("Controlador caixa registradora criado\n");
@@ -26,33 +33,37 @@ public class Controlador_CaixaRegistradora {
 
 	public void criacaoAdapterSistemaCaixaRegistradoraContabil(String nome) {
 		if (nome.equals("IBM")) {
-			adapterSistemaContabil = new Adapter_SistemaContabil_IBM_Adaptee();
+			adapterSistemaContabilIBM = new Adapter_SistemaContabil_IBM_Adaptee();
 		} else if (nome.equals("ItauTec")) {
-			adapterSistemaContabil = new Adapter_SistemaContabil_ItauTec_Adaptee();
+			adapterSistemaContabilItauTec = new Adapter_SistemaContabil_ItauTec_Adaptee();
 		}else if (nome.equals("SAP")) {
-			adapterSistemaContabil = new Adapter_SistemaContabil_SAP_Adaptee();
+			adapterSistemaContabilSAP = new Adapter_SistemaContabil_SAP_Adaptee();
 		}
 	}
 
 	public void criacaoAdapterSistemaCaixaRegistradoraEstoque(String nome) {
 		if (nome.equals("IBM")) {
-			adapterSistemaEstoque = new Adapter_SistemaEstoque_IBM_Adaptee();
+			adapterSistemaEstoqueIBM = new Adapter_SistemaEstoque_IBM_Adaptee();
 		} else if (nome.equals("ItauTec")) {
-			adapterSistemaEstoque = new Adapter_SistemaEstoque_ItauTec_Adaptee();
+			adapterSistemaEstoqueItauTec = new Adapter_SistemaEstoque_ItauTec_Adaptee();
 		}else if (nome.equals("SAP")) {
-			adapterSistemaEstoque = new Adapter_SistemaEstoque_SAP_Adaptee();
+			adapterSistemaEstoqueSAP = new Adapter_SistemaEstoque_SAP_Adaptee();
 		}
 	}
 
 	// Teste de integração com os dois sistemas adaptee
 	// Estoque
 	public void diminuirEstoque() {
-		adapterSistemaEstoque.diminuirItem();
+		adapterSistemaEstoqueIBM.diminuirItem();
+		adapterSistemaEstoqueItauTec.diminuirItem();
+		adapterSistemaEstoqueSAP.diminuirItem();
 	}
 	
 	// Contabil
 	public void registroVendaSistemaContabil() {
-		adapterSistemaContabil.finalizarVenda();
+		adapterSistemaContabilIBM.finalizarVenda();
+		adapterSistemaContabilItauTec.finalizarVenda();
+		adapterSistemaContabilSAP.finalizarVenda();
 	}
 
 }
