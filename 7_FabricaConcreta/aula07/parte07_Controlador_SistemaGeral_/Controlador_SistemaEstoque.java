@@ -1,10 +1,17 @@
-package aula07.parte04_Controlador_SistemaEstoque;
+package aula07.parte07_Controlador_SistemaGeral_;
 
-import aula07.parte03_Adapter_SistemaEstoque.Adapter_SistemaEstoque_IBM_Adaptee;
-import aula07.parte03_Adapter_SistemaEstoque.Adapter_SistemaEstoque_ItauTec_Adaptee;
-import aula07.parte03_Adapter_SistemaEstoque.Adapter_SistemaEstoque_SAP_Adaptee;
-import aula07.parte03_Adapter_SistemaEstoque.IAdapter_SistemaEstoque;
+import aula07.parte03_Adapter_SistemaEstoque_.Adapter_SistemaEstoque_IBM_Adaptee;
+import aula07.parte03_Adapter_SistemaEstoque_.Adapter_SistemaEstoque_ItauTec_Adaptee;
+import aula07.parte03_Adapter_SistemaEstoque_.Adapter_SistemaEstoque_SAP_Adaptee;
+import aula07.parte03_Adapter_SistemaEstoque_.IAdapter_SistemaEstoque;
 
+/**
+ * @Problema_fabrica_concreta
+ * Ao iterar um novo sistema adaptee é preciso atualizar
+ * sempre os controladores não se consegue desacoplar as 
+ * variaçoes da criação de objetos para resolver isso
+ * é preciso usar a fabrica concreta.
+ */
 public class Controlador_SistemaEstoque {
 	private IAdapter_SistemaEstoque adapterSistemaEstoque;
 

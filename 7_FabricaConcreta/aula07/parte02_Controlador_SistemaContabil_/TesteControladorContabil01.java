@@ -1,4 +1,4 @@
-package aula07.parte02_Controlador_SistemaContabil;
+package aula07.parte02_Controlador_SistemaContabil_;
 
 public class TesteControladorContabil01 {
 	public static void testeSistemaContabilControlador() {
