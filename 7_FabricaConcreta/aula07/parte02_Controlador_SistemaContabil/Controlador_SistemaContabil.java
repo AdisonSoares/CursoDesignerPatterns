@@ -1,4 +1,4 @@
-package aula07.parte02_Controlador_SistemaContabil_;
+package aula07.parte02_Controlador_SistemaContabil;
 
 import aula07.parte01_Adapter_SistemaContabil.Adapter_SistemaContabil_IBM_Adaptee;
 import aula07.parte01_Adapter_SistemaContabil.Adapter_SistemaContabil_ItauTec_Adaptee;
