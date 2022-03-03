@@ -1,9 +1,9 @@
 package aula07.parte07_Controlador_SistemaGeral_;
 
-import aula07.parte01_Adapter_SistemaContabil_.Adapter_SistemaContabil_IBM_Adaptee;
-import aula07.parte01_Adapter_SistemaContabil_.Adapter_SistemaContabil_ItauTec_Adaptee;
-import aula07.parte01_Adapter_SistemaContabil_.Adapter_SistemaContabil_SAP_Adaptee;
-import aula07.parte01_Adapter_SistemaContabil_.IAdapter_SistemaContabil;
+import aula07.parte01_Adapter_SistemaContabil.Adapter_SistemaContabil_IBM_Adaptee;
+import aula07.parte01_Adapter_SistemaContabil.Adapter_SistemaContabil_ItauTec_Adaptee;
+import aula07.parte01_Adapter_SistemaContabil.Adapter_SistemaContabil_SAP_Adaptee;
+import aula07.parte01_Adapter_SistemaContabil.IAdapter_SistemaContabil;
 
 /**
  * @Problema_fabrica_concreta
