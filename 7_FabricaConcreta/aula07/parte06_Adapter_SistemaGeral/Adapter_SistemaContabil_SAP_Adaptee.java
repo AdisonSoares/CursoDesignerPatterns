@@ -1,7 +1,6 @@
-package aula07.parte06_Adapter_SistemaGeral_;
-
-import aula07.parte01_Adaptee_SistemaEstoque.SistemaEstoqueAdaptee;
-
+package aula07.parte06_Adapter_SistemaGeral;
+import aula07.parte01_Adaptee_SistemaContabil.SistemaContabilAdaptee;
+  
 
 /**
  * @Objetivo é refatorando a hierarquia de adaptadores de contabilidade
@@ -10,10 +9,13 @@ import aula07.parte01_Adaptee_SistemaEstoque.SistemaEstoqueAdaptee;
  * de um novo servidor, sendo que cada classe utiliza basicamente as mesmas
  * funcionalidades podendo ser melhor reutilizada para não haver repetiçao.
  */
-public class Adapter_SistemaEstoque_ItauTec_Adaptee extends Adapter_SistemaEstoqueGeral{
+public class Adapter_SistemaContabil_SAP_Adaptee extends Adapter_SistemaContabilGeral{
 	
-	public Adapter_SistemaEstoque_ItauTec_Adaptee() {
-		this.sistemaEstoqueAdaptee = new SistemaEstoqueAdaptee("ItauTec");
+	
+	public Adapter_SistemaContabil_SAP_Adaptee() {
+		this.sistemaContabilAdaptee = new SistemaContabilAdaptee("SAP");
 	}
+	
+
 
 }
