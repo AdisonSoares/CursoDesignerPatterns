@@ -1,4 +1,4 @@
-package aula07.parte03_Adapter_SistemaEstoque_;
+package aula07.parte03_Adapter_SistemaEstoque;
 
 import aula07.parte01_Adaptee_SistemaEstoque.SistemaEstoqueAdaptee;
 
