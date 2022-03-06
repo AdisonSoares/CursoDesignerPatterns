@@ -1,4 +1,4 @@
-package aula07.parte07_Controlador_SistemaGeral_AplicacaoFabrica_;
+package aula07.parte07_Controlador_SistemaGeral_AplicacaoFabrica;
 
 public class TesteControladorContabil05 {
 	public static void testeSistemaContabilControlador() {
