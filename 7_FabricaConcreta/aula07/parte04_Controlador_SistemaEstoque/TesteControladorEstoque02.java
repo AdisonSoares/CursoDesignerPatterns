@@ -1,4 +1,4 @@
-package aula07.parte04_Controlador_SistemaEstoque_;
+package aula07.parte04_Controlador_SistemaEstoque;
 
 public class TesteControladorEstoque02 {
 	public static void testeSistemaEstoqueControlador() {

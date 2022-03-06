@@ -1,4 +1,4 @@
-package aula07.parte04_Controlador_SistemaEstoque_;
+package aula07.parte04_Controlador_SistemaEstoque;
 
 import aula07.parte03_Adapter_SistemaEstoque.Adapter_SistemaEstoque_IBM_Adaptee;
 import aula07.parte03_Adapter_SistemaEstoque.Adapter_SistemaEstoque_ItauTec_Adaptee;
