@@ -1,13 +1,11 @@
-package aula07.parte01_Adapter_SistemaContabil_;
-
+package aula07.parte01_Adapter_SistemaContabil;
 import aula07.parte01_Adaptee_SistemaContabil.SistemaContabilAdaptee;
-
-public class Adapter_SistemaContabil_ItauTec_Adaptee implements IAdapter_SistemaContabil{
+  
+public class Adapter_SistemaContabil_IBM_Adaptee implements IAdapter_SistemaContabil{
 	private SistemaContabilAdaptee sistemaContabilAdaptee;
 	
-	
-	public Adapter_SistemaContabil_ItauTec_Adaptee() {
-		sistemaContabilAdaptee= new SistemaContabilAdaptee("ItauTec");
+	public Adapter_SistemaContabil_IBM_Adaptee() {
+		sistemaContabilAdaptee = new SistemaContabilAdaptee("IBM");
 	}
 	
 	@Override
