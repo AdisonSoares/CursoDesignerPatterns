@@ -1,8 +1,8 @@
 package aula07.parte07_Controlador_SistemaGeral_AplicacaoFabrica_;
 
-import aula07.parte06_Adapter_SistemaGeral_AplicacaoFabrica_.Adapter_Fabrica;
-import aula07.parte06_Adapter_SistemaGeral_AplicacaoFabrica_.Adapter_SistemaContabil;
-import aula07.parte06_Adapter_SistemaGeral_AplicacaoFabrica_.Adapter_SistemaEstoque;
+import aula07.parte06_Adapter_SistemaGeral_AplicacaoFabrica.Adapter_Fabrica;
+import aula07.parte06_Adapter_SistemaGeral_AplicacaoFabrica.Adapter_SistemaContabil;
+import aula07.parte06_Adapter_SistemaGeral_AplicacaoFabrica.Adapter_SistemaEstoque;
 
 /**
  * @Problema_fabrica_concreta

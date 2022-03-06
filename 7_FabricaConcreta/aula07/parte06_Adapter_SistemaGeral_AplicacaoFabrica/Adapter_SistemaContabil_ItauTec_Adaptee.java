@@ -1,4 +1,4 @@
-package aula07.parte06_Adapter_SistemaGeral_AplicacaoFabrica_;
+package aula07.parte06_Adapter_SistemaGeral_AplicacaoFabrica;
 
 import aula07.parte01_Adaptee_SistemaContabil.SistemaContabilAdaptee;
 
@@ -9,8 +9,8 @@ import aula07.parte01_Adaptee_SistemaContabil.SistemaContabilAdaptee;
  * de um novo servidor, sendo que cada classe utiliza basicamente as mesmas
  * funcionalidades podendo ser melhor reutilizada para não haver repetiçao.
  */
-public class Adapter_SistemaContabil_IBM_Adaptee extends Adapter_SistemaContabil{
-	public Adapter_SistemaContabil_IBM_Adaptee() {
-		sistemaContabilAdaptee = new SistemaContabilAdaptee("IBM");
+public class Adapter_SistemaContabil_ItauTec_Adaptee extends Adapter_SistemaContabil{
+	public Adapter_SistemaContabil_ItauTec_Adaptee() {
+		sistemaContabilAdaptee= new SistemaContabilAdaptee("ItauTec");
 	}
 }

@@ -1,4 +1,4 @@
-package aula07.parte06_Adapter_SistemaGeral_AplicacaoFabrica_;
+package aula07.parte06_Adapter_SistemaGeral_AplicacaoFabrica;
 
 import aula07.parte01_Adaptee_SistemaContabil.SistemaContabilAdaptee;
 

@@ -1,6 +1,6 @@
-package aula07.parte06_Adapter_SistemaGeral_AplicacaoFabrica_;
+package aula07.parte06_Adapter_SistemaGeral_AplicacaoFabrica;
 
-import aula07.parte01_Adaptee_SistemaEstoque.SistemaEstoqueAdaptee;
+import aula07.parte01_Adaptee_SistemaContabil.SistemaContabilAdaptee;
 
 /**
  * @FabricaConcreta permite desacoplar a criação de seus codigos clientes,
@@ -22,7 +22,6 @@ import aula07.parte01_Adaptee_SistemaEstoque.SistemaEstoqueAdaptee;
  * @Controlador
  * O primeiro objeto a receber uma requisição de uma inteface grafica com o usuário se chama
  * controlador, ele define o fluxo de execução da aplicação.
- * 
  * 
  * @Objetivo é refatorando a hierarquia de adaptadores de contabilidade
  * e estoque para ter um melhor uso de código eliminando duplicação.
@@ -51,15 +50,15 @@ import aula07.parte01_Adaptee_SistemaEstoque.SistemaEstoqueAdaptee;
  * É a classe criada para solucionar o problema de variação da criação de objetos,
  * seu único objeto é criar objetos.
  */
-public abstract class Adapter_SistemaEstoque {
-	protected SistemaEstoqueAdaptee sistemaEstoqueAdaptee;
+public abstract class Adapter_SistemaContabil {
+	protected SistemaContabilAdaptee sistemaContabilAdaptee;
 	
-	public void diminuirItem() {
-		sistemaEstoqueAdaptee.diminuirEstoque();
+	public void finalizarVenda() {
+		sistemaContabilAdaptee.registroVenda();
 	}
 
-	public void atualizarItem() {
-		sistemaEstoqueAdaptee.atualizacaoEstoque();
+	public void registrarImposto() {
+		sistemaContabilAdaptee.calculoImposto();
 	}
 }
 
