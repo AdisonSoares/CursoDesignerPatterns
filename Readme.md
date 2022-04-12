@@ -15,3 +15,7 @@ suas vantegens e desvantagens e dando base para o estudos posterior dos demais t
 - Facade
 - Template Method
 - Conceitos chave
+
+<h4 align="center"> 
+	🚧  Em construção...  🚧
+</h4>
