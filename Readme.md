@@ -3,7 +3,7 @@
 
 ### APRESENTAÇÃO
 
-- Estudo prático da plataforma DevMedia com duração de 30 horas.</br> 
+- Estudo prático com duração de 30 horas.</br> 
 - Esse curso aborda alguns tipos de designers patterns explicando o sentido de uso de cada um,
 suas vantegens e desvantagens e dando base para o estudos posterior dos demais tipos.
 
